@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-05T07:31:13.593706+00:00",
+  "utc": "2026-11-05T07:33:50.065360+00:00",
   "pid": 1735064,
   "models": [
     {
@@ -8,13 +8,13 @@
       "planned_successful_answers": 3822,
       "complete_three_answer_conditions": 1271,
       "conditions": 1274,
-      "attempts": 4254,
-      "inflight": 1,
+      "attempts": 4256,
+      "inflight": 0,
       "max_actual_http_concurrency": 3,
       "certified_unique_response_answers": 3819,
       "recent_technical_errors": {
         "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 215,
-        "200:truncated_completion": 150,
+        "200:truncated_completion": 152,
         "200:empty_visible_response": 70
       },
       "status": "running"
@@ -56,19 +56,19 @@
       "planned_successful_answers": 3822,
       "complete_three_answer_conditions": 0,
       "conditions": 1274,
-      "attempts": 3562,
+      "attempts": 3565,
       "inflight": 3,
       "max_actual_http_concurrency": 3,
       "certified_unique_response_answers": 2499,
       "recent_technical_errors": {
-        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 861,
+        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 864,
         "503:{\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"api_error\",\"param\":\"\",\"code\":null}}": 201,
         "200:empty_visible_response": 1
       },
       "status": "running"
     }
   ],
-  "active_http_requests": 4,
+  "active_http_requests": 3,
   "max_actual_http_concurrency": 12,
   "workers_per_model": 3,
   "credential_persisted": false,
