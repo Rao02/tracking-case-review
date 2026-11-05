@@ -15,6 +15,6 @@ Static export of the server's case review page, including local linked review pa
 
 Run `./sync.sh` on the source server to regenerate, commit changes, and push. The script uses the existing Git credential mechanism; do not put tokens in files or remote URLs.
 
-A periodic job can call this script after repository authentication and first deployment are verified. No timer is installed by this preparation. Each push triggers a Pages deployment; this is deployment-based synchronization, not instantaneous streaming. Open browser tabs currently need a refresh to show the published update.
+The source server uses a user cron job every five minutes to call this script, with a 15-minute timeout and a lock to prevent overlapping exports. The source server must remain online. Logs are in `sync.log` (not committed). Each push triggers a Pages deployment; this is deployment-based synchronization, not instantaneous streaming. Open browser tabs currently need a refresh to show the published update.
 
 `EXPORT_REPORT.json` is a local verification manifest, excluded from Git. The exporter aborts on missing links, exports over 900 MiB, or individual files over 95 MiB.
