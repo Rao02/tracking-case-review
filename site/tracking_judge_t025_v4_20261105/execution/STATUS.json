@@ -1,0 +1,77 @@
+{
+  "utc": "2026-11-05T06:42:07.008908+00:00",
+  "pid": 1735064,
+  "models": [
+    {
+      "model": "deepseek-v4.1-flash",
+      "successful_answers": 3818,
+      "planned_successful_answers": 3822,
+      "complete_three_answer_conditions": 1270,
+      "conditions": 1274,
+      "attempts": 4246,
+      "inflight": 0,
+      "max_actual_http_concurrency": 3,
+      "certified_unique_response_answers": 3818,
+      "recent_technical_errors": {
+        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 215,
+        "200:truncated_completion": 143,
+        "200:empty_visible_response": 70
+      },
+      "status": "running"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "successful_answers": 3821,
+      "planned_successful_answers": 3822,
+      "complete_three_answer_conditions": 1273,
+      "conditions": 1274,
+      "attempts": 4786,
+      "inflight": 0,
+      "max_actual_http_concurrency": 3,
+      "certified_unique_response_answers": 3821,
+      "recent_technical_errors": {
+        "200:duplicate_response_id": 865,
+        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 100
+      },
+      "status": "running"
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "successful_answers": 3822,
+      "planned_successful_answers": 3822,
+      "complete_three_answer_conditions": 1274,
+      "conditions": 1274,
+      "attempts": 3829,
+      "inflight": 0,
+      "max_actual_http_concurrency": 3,
+      "certified_unique_response_answers": 3822,
+      "recent_technical_errors": {
+        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 7
+      },
+      "status": "complete"
+    },
+    {
+      "model": "glm-5.3-flash",
+      "successful_answers": 2387,
+      "planned_successful_answers": 3822,
+      "complete_three_answer_conditions": 0,
+      "conditions": 1274,
+      "attempts": 3399,
+      "inflight": 3,
+      "max_actual_http_concurrency": 3,
+      "certified_unique_response_answers": 2387,
+      "recent_technical_errors": {
+        "524:{\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/err": 810,
+        "503:{\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"api_error\",\"param\":\"\",\"code\":null}}": 201,
+        "200:empty_visible_response": 1
+      },
+      "status": "running"
+    }
+  ],
+  "active_http_requests": 3,
+  "max_actual_http_concurrency": 12,
+  "workers_per_model": 3,
+  "credential_persisted": false,
+  "all_requests_independent_two_message": true,
+  "input_freeze_sha256": "aa2880a1ec6f580a5ffdf40559e6d541b4743dc7ce75f9d4d488de0d2d2d17ce"
+}

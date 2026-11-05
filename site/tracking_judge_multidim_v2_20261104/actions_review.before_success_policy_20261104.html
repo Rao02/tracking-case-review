@@ -1,0 +1,1788 @@
+<html><meta charset="utf-8"><style>body{font:16px sans-serif}img{max-width:100%}pre{white-space:pre-wrap}</style><h1>Private K4 review: contains future outcomes, never send as model input</h1>
+<h2>MD2-STT-01-ACTION-t0004</h2><img src="action_review/MD2-STT-01-ACTION-t0004_paths.png">
+<img src="action_review/MD2-STT-01-ACTION-t0004_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647559343594132,
+        0.10480672198638404,
+        0.1432716885682074,
+        0.29541631885670366,
+        0.41278267672709296,
+        0.06529132595875088,
+        0.1347684948751187,
+        0.14861333773771615
+      ],
+      &quot;max_end_error_m&quot;: 0.41278267672709296,
+      &quot;following_fraction&quot;: 0.4375,
+      &quot;target_visible_fraction&quot;: 0.4791666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647559343594132,
+        0.25338617833103627,
+        0.21873036096310508,
+        0.22963625596573503,
+        0.1464578500388936,
+        0.14506958036667986,
+        0.09770833961398173,
+        0.10557930395217746
+      ],
+      &quot;max_end_error_m&quot;: 0.25338617833103627,
+      &quot;following_fraction&quot;: 0.3958333333333333,
+      &quot;target_visible_fraction&quot;: 0.75,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647559343594132,
+        0.026879844285617866,
+        0.030688304186102893,
+        0.03114358102370741,
+        0.011200263071414892,
+        0.02653302461758779,
+        0.030653343890967917,
+        0.0311394471267817
+      ],
+      &quot;max_end_error_m&quot;: 0.03114358102370741,
+      &quot;following_fraction&quot;: 0.20833333333333334,
+      &quot;target_visible_fraction&quot;: 0.2916666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647559343594132,
+        0.07997332356365487,
+        0.09296555782393529,
+        0.12462150069945724,
+        0.10628109625046893,
+        0.08961052223346348,
+        0.08810441796602315,
+        0.09406251316532988
+      ],
+      &quot;max_end_error_m&quot;: 0.12462150069945724,
+      &quot;following_fraction&quot;: 0.16666666666666666,
+      &quot;target_visible_fraction&quot;: 0.16666666666666666,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-STT-02-ACTION-t0004</h2><img src="action_review/MD2-STT-02-ACTION-t0004_paths.png">
+<img src="action_review/MD2-STT-02-ACTION-t0004_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;C&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647064482478596,
+        0.25199767202839185,
+        0.3043382424042286,
+        0.295365911214996,
+        0.22446778856573496,
+        0.2623043483903607,
+        0.18781677923154755,
+        0.21952500362469216
+      ],
+      &quot;max_end_error_m&quot;: 0.3043382424042286,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.375,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647064482478596,
+        0.024673110968076055,
+        0.03476308427554269,
+        0.12639425776445679,
+        0.10408728423087518,
+        0.06590731620395558,
+        0.0276018465198972,
+        0.02933298092700453
+      ],
+      &quot;max_end_error_m&quot;: 0.12639425776445679,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.5625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647064482478596,
+        0.17616356510763478,
+        0.5446110909908962,
+        0.5265529520054503,
+        0.08844170902309494,
+        0.22271282182435584,
+        0.40528788741936306,
+        0.4841054794963417
+      ],
+      &quot;max_end_error_m&quot;: 0.5446110909908962,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.7916666666666666,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647064482478596,
+        0.07955717202561748,
+        0.23249501302526937,
+        0.13635010672980785,
+        0.13059790532396204,
+        0.1843085998983929,
+        0.05286655166595604,
+        0.03991223243239496
+      ],
+      &quot;max_end_error_m&quot;: 0.23249501302526937,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.5625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-STT-07-ACTION-t0025</h2><img src="action_review/MD2-STT-07-ACTION-t0025_paths.png">
+<img src="action_review/MD2-STT-07-ACTION-t0025_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764705539891971,
+        0.11689941511301662,
+        0.08965922512111876,
+        0.2083337282932573,
+        0.2761394135678938,
+        0.25618157596043223,
+        0.1990949719728987,
+        0.17847720638889003
+      ],
+      &quot;max_end_error_m&quot;: 0.2761394135678938,
+      &quot;following_fraction&quot;: 0.041666666666666664,
+      &quot;target_visible_fraction&quot;: 0.14583333333333334,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764705539891971,
+        0.03503043981349944,
+        0.13668185601469748,
+        0.13377628256760762,
+        0.17080875836588097,
+        0.2241035725162386,
+        0.06679949001628532,
+        0.03746966807869341
+      ],
+      &quot;max_end_error_m&quot;: 0.2241035725162386,
+      &quot;following_fraction&quot;: 0.041666666666666664,
+      &quot;target_visible_fraction&quot;: 0.0625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764705539891971,
+        0.0268134957302976,
+        0.16206185924614586,
+        0.16323291299570264,
+        0.12510609833741346,
+        0.22131680820144137,
+        0.11968603806996872,
+        0.029141643952628752
+      ],
+      &quot;max_end_error_m&quot;: 0.22131680820144137,
+      &quot;following_fraction&quot;: 0.041666666666666664,
+      &quot;target_visible_fraction&quot;: 0.0625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764705539891971,
+        0.13881138210490526,
+        0.18480637083623178,
+        0.241164613222343,
+        0.1355454681339653,
+        0.18748262840374275,
+        0.19815894964918432,
+        0.17057560844763764
+      ],
+      &quot;max_end_error_m&quot;: 0.241164613222343,
+      &quot;following_fraction&quot;: 0.041666666666666664,
+      &quot;target_visible_fraction&quot;: 0.0625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-STT-08-ACTION-t0032</h2><img src="action_review/MD2-STT-08-ACTION-t0032_paths.png">
+<img src="action_review/MD2-STT-08-ACTION-t0032_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647385650703756,
+        0.0765297968261724,
+        0.08391495999706695,
+        0.12463145090856684,
+        0.07966536292046382,
+        0.08155789845291206,
+        0.09064942015739713,
+        0.08461852637054887
+      ],
+      &quot;max_end_error_m&quot;: 0.12463145090856684,
+      &quot;following_fraction&quot;: 0.125,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647385650703756,
+        0.09635728707890938,
+        0.12505021740527403,
+        0.2806203486875798,
+        0.13132176710531113,
+        0.10557043635270941,
+        0.1282481368145402,
+        0.1359905433492453
+      ],
+      &quot;max_end_error_m&quot;: 0.2806203486875798,
+      &quot;following_fraction&quot;: 0.08333333333333333,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647385650703756,
+        0.023889688288271642,
+        0.02495815147696475,
+        0.025727034972221154,
+        0.016307526561639637,
+        0.024132015933310595,
+        0.0248689152347559,
+        0.02461272285932264
+      ],
+      &quot;max_end_error_m&quot;: 0.025727034972221154,
+      &quot;following_fraction&quot;: 0.08333333333333333,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647385650703756,
+        0.03401880662325851,
+        0.03996901181573779,
+        0.0406698860547045,
+        0.021277358272329492,
+        0.033471517251284326,
+        0.039905308191418125,
+        0.04066239306902228
+      ],
+      &quot;max_end_error_m&quot;: 0.0406698860547045,
+      &quot;following_fraction&quot;: 0.08333333333333333,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-AT-03-ACTION-t0010</h2><img src="action_review/MD2-AT-03-ACTION-t0010_paths.png">
+<img src="action_review/MD2-AT-03-ACTION-t0010_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;B&quot;,
+    &quot;C&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.1233938566754757,
+        0.17226236691020533,
+        0.23745449271847782,
+        0.4315138209390615,
+        0.28059502643836404,
+        0.27777168475206737,
+        0.2805092013498665,
+        0.16923275785848677
+      ],
+      &quot;max_end_error_m&quot;: 0.4315138209390615,
+      &quot;following_fraction&quot;: 0.14583333333333334,
+      &quot;target_visible_fraction&quot;: 0.4166666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000004,
+        0.8800000000000007,
+        1.168000000000001,
+        1.4640000000000013,
+        1.7520000000000011,
+        2.0480000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.1233938566754757,
+        0.12644324394901835,
+        0.34883804747651453,
+        0.19578251472369673,
+        0.10014312077366937,
+        0.25904851638231147,
+        0.18431419300614865,
+        0.16577333191110388
+      ],
+      &quot;max_end_error_m&quot;: 0.34883804747651453,
+      &quot;following_fraction&quot;: 0.3333333333333333,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000004,
+        0.8800000000000007,
+        1.168000000000001,
+        1.4640000000000013,
+        1.7520000000000011,
+        2.0480000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.1233938566754757,
+        0.09520955818580627,
+        0.06854692060095013,
+        0.04294710303425981,
+        0.025440167520924904,
+        0.0647248305364834,
+        0.15254119775873062,
+        0.039633199664141645
+      ],
+      &quot;max_end_error_m&quot;: 0.15254119775873062,
+      &quot;following_fraction&quot;: 0.16666666666666666,
+      &quot;target_visible_fraction&quot;: 0.5,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000004,
+        0.8800000000000007,
+        1.168000000000001,
+        1.4640000000000013,
+        1.7520000000000011,
+        2.0480000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.1233938566754757,
+        0.2574547375403084,
+        0.2757256026263747,
+        0.23970578804482365,
+        0.17159163132692362,
+        0.3705515541950849,
+        0.20235863880353377,
+        0.13888229866354268
+      ],
+      &quot;max_end_error_m&quot;: 0.3705515541950849,
+      &quot;following_fraction&quot;: 0.2708333333333333,
+      &quot;target_visible_fraction&quot;: 0.2708333333333333,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000004,
+        0.8800000000000007,
+        1.168000000000001,
+        1.4640000000000013,
+        1.7520000000000011,
+        2.0480000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-AT-04-ACTION-t0004</h2><img src="action_review/MD2-AT-04-ACTION-t0004_paths.png">
+<img src="action_review/MD2-AT-04-ACTION-t0004_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;D&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647343962895436,
+        0.07893843047420242,
+        0.23943109581515584,
+        0.09393982720764013,
+        0.23187973514988414,
+        0.11517628297198783,
+        0.09374953267352015,
+        0.08915060049218908
+      ],
+      &quot;max_end_error_m&quot;: 0.23943109581515584,
+      &quot;following_fraction&quot;: 0.3125,
+      &quot;target_visible_fraction&quot;: 0.4166666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647343962895436,
+        0.11099886742714767,
+        0.28347329971410273,
+        0.1899133397070548,
+        0.05803094508445516,
+        0.32417550135659823,
+        0.20710089232460413,
+        0.163952331198159
+      ],
+      &quot;max_end_error_m&quot;: 0.32417550135659823,
+      &quot;following_fraction&quot;: 0.2708333333333333,
+      &quot;target_visible_fraction&quot;: 0.3125,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647343962895436,
+        0.0908657961206451,
+        0.13391493073685,
+        0.323417207268156,
+        0.1862466774575153,
+        0.21727403765381165,
+        0.09448268300795452,
+        0.11584951602211521
+      ],
+      &quot;max_end_error_m&quot;: 0.323417207268156,
+      &quot;following_fraction&quot;: 0.25,
+      &quot;target_visible_fraction&quot;: 0.375,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647343962895436,
+        0.02324738758906595,
+        0.02805836446837085,
+        0.028624276824970336,
+        0.02869093706426502,
+        0.12139581757056482,
+        0.07433077025270225,
+        0.020653026382486967
+      ],
+      &quot;max_end_error_m&quot;: 0.12139581757056482,
+      &quot;following_fraction&quot;: 0.2708333333333333,
+      &quot;target_visible_fraction&quot;: 0.6458333333333334,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-AT-07-ACTION-t0029</h2><img src="action_review/MD2-AT-07-ACTION-t0029_paths.png">
+<img src="action_review/MD2-AT-07-ACTION-t0029_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;B&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764734721585377,
+        0.08180018049112509,
+        0.09213311086662841,
+        0.293272277550012,
+        0.2120379503345701,
+        0.07723320784307634,
+        0.08411254421461488,
+        0.09145225999030236
+      ],
+      &quot;max_end_error_m&quot;: 0.293272277550012,
+      &quot;following_fraction&quot;: 0.020833333333333332,
+      &quot;target_visible_fraction&quot;: 0.7708333333333334,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764734721585377,
+        0.12692240212593067,
+        0.11736586569988072,
+        0.1228130419262616,
+        0.07922285249726167,
+        0.08533438020316275,
+        0.1385697603170339,
+        0.13158002613560005
+      ],
+      &quot;max_end_error_m&quot;: 0.1385697603170339,
+      &quot;following_fraction&quot;: 0.020833333333333332,
+      &quot;target_visible_fraction&quot;: 0.7916666666666666,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764734721585377,
+        0.2847434527319771,
+        0.40314439898060433,
+        0.42216022864828345,
+        0.1451458853379248,
+        0.20787544261025728,
+        0.3818803092310542,
+        0.47657990528596816
+      ],
+      &quot;max_end_error_m&quot;: 0.47657990528596816,
+      &quot;following_fraction&quot;: 0.020833333333333332,
+      &quot;target_visible_fraction&quot;: 0.2916666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764734721585377,
+        0.024362442173149146,
+        0.028639331621881127,
+        0.02914728279641265,
+        0.015820206709110805,
+        0.023969328258342457,
+        0.02859749560296651,
+        0.02914238294920674
+      ],
+      &quot;max_end_error_m&quot;: 0.02914728279641265,
+      &quot;following_fraction&quot;: 0.020833333333333332,
+      &quot;target_visible_fraction&quot;: 0.4583333333333333,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.29600000000000026,
+        0.5840000000000003,
+        0.8800000000000006,
+        1.1680000000000008,
+        1.464000000000001,
+        1.7520000000000013,
+        2.048000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-AT-10-ACTION-t0026</h2><img src="action_review/MD2-AT-10-ACTION-t0026_paths.png">
+<img src="action_review/MD2-AT-10-ACTION-t0026_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;B&quot;,
+    &quot;D&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017617118240216962,
+        0.14472911365731297,
+        0.26009728076303174,
+        0.20941015938152296,
+        0.09761462588380725,
+        0.1658272542248837,
+        0.12424085927026537,
+        0.1219838418626413
+      ],
+      &quot;max_end_error_m&quot;: 0.26009728076303174,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.3125,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017617118240216962,
+        0.038807500991407444,
+        0.19448983457173719,
+        0.2569653068124116,
+        0.21851391746913174,
+        0.16797409390830112,
+        0.09474031086785924,
+        0.043383038879627675
+      ],
+      &quot;max_end_error_m&quot;: 0.2569653068124116,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.5416666666666666,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017617118240216962,
+        0.0748590173554823,
+        0.08595724717042141,
+        0.0865687907414088,
+        0.04668052762330353,
+        0.08348254539031359,
+        0.0857371367585197,
+        0.08783313420093924
+      ],
+      &quot;max_end_error_m&quot;: 0.08783313420093924,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.2916666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017617118240216962,
+        0.0282066507639999,
+        0.07042806621968979,
+        0.035221910454845344,
+        0.025686598527702567,
+        0.04748681170333933,
+        0.025480963666398865,
+        0.02509148199782881
+      ],
+      &quot;max_end_error_m&quot;: 0.07042806621968979,
+      &quot;following_fraction&quot;: 0.0625,
+      &quot;target_visible_fraction&quot;: 0.5416666666666666,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-DT-01-ACTION-t0004</h2><img src="action_review/MD2-DT-01-ACTION-t0004_paths.png">
+<img src="action_review/MD2-DT-01-ACTION-t0004_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;C&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.03986047837925689,
+        0.07450007738238355,
+        0.26325389218241085,
+        0.22983965118071578,
+        0.3890959357904781,
+        0.02878996887713944,
+        0.16174613147793757,
+        0.0870026329272624
+      ],
+      &quot;max_end_error_m&quot;: 0.3890959357904781,
+      &quot;following_fraction&quot;: 0.125,
+      &quot;target_visible_fraction&quot;: 0.4166666666666667,
+      &quot;human_collision_fraction&quot;: 0.7708333333333334,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: true,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.03986047837925689,
+        0.02601041930723569,
+        0.04961945668335288,
+        0.06838731599078676,
+        0.06420007841111691,
+        0.03281838983902733,
+        0.048767655480562305,
+        0.027676294818190256
+      ],
+      &quot;max_end_error_m&quot;: 0.06838731599078676,
+      &quot;following_fraction&quot;: 0.10416666666666667,
+      &quot;target_visible_fraction&quot;: 0.20833333333333334,
+      &quot;human_collision_fraction&quot;: 0.875,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: true,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.03986047837925689,
+        0.07571850621419927,
+        0.3182678091834416,
+        0.18524840095069647,
+        0.091082025164546,
+        0.16228919568959702,
+        0.23431324309038776,
+        0.0986124678794745
+      ],
+      &quot;max_end_error_m&quot;: 0.3182678091834416,
+      &quot;following_fraction&quot;: 0.16666666666666666,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.7708333333333334,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: true,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.03986047837925689,
+        0.13942132312728295,
+        0.3585092902835734,
+        0.2972756798640254,
+        0.03965772460057938,
+        0.49135247756542927,
+        0.37650281836155225,
+        0.29526544300997093
+      ],
+      &quot;max_end_error_m&quot;: 0.49135247756542927,
+      &quot;following_fraction&quot;: 0.10416666666666667,
+      &quot;target_visible_fraction&quot;: 0.14583333333333334,
+      &quot;human_collision_fraction&quot;: 0.875,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: true,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-DT-02-ACTION-t0004</h2><img src="action_review/MD2-DT-02-ACTION-t0004_paths.png">
+<img src="action_review/MD2-DT-02-ACTION-t0004_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;D&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647372949300598,
+        0.07370745128229263,
+        0.09124673009641872,
+        0.09544970386995225,
+        0.06657948532110723,
+        0.0656383175557072,
+        0.0893140593822929,
+        0.09499636375186153
+      ],
+      &quot;max_end_error_m&quot;: 0.09544970386995225,
+      &quot;following_fraction&quot;: 0.14583333333333334,
+      &quot;target_visible_fraction&quot;: 0.4583333333333333,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647372949300598,
+        0.09835168424704754,
+        0.4051951816489491,
+        0.5260868385889267,
+        0.5466536583508499,
+        0.36536629481071553,
+        0.22651390030952478,
+        0.06877518026553381
+      ],
+      &quot;max_end_error_m&quot;: 0.5466536583508499,
+      &quot;following_fraction&quot;: 0.14583333333333334,
+      &quot;target_visible_fraction&quot;: 0.3958333333333333,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647372949300598,
+        0.14608497501396017,
+        0.23033511042428442,
+        0.2582779854173656,
+        0.16957678266004916,
+        0.08002847214189353,
+        0.025938586303586742,
+        0.028199040159647606
+      ],
+      &quot;max_end_error_m&quot;: 0.2582779854173656,
+      &quot;following_fraction&quot;: 0.16666666666666666,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647372949300598,
+        0.1403233982501447,
+        0.3166652165672308,
+        0.31619314868969295,
+        0.016381599500960065,
+        0.388259496235035,
+        0.31866294320043104,
+        0.24445405438093992
+      ],
+      &quot;max_end_error_m&quot;: 0.388259496235035,
+      &quot;following_fraction&quot;: 0.3125,
+      &quot;target_visible_fraction&quot;: 0.3541666666666667,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000013,
+        1.7520000000000016,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-DT-08-ACTION-t0014</h2><img src="action_review/MD2-DT-08-ACTION-t0014_paths.png">
+<img src="action_review/MD2-DT-08-ACTION-t0014_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;C&quot;,
+    &quot;D&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647207638396063,
+        0.033568223404622656,
+        0.03776492288226041,
+        0.03826504522359232,
+        0.006815359612461823,
+        0.033184392556207254,
+        0.037726310263742444,
+        0.038260795438454676
+      ],
+      &quot;max_end_error_m&quot;: 0.03826504522359232,
+      &quot;following_fraction&quot;: 1.0,
+      &quot;target_visible_fraction&quot;: 1.0,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000014,
+        0.5840000000000004,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000008,
+        1.7520000000000011,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647207638396063,
+        0.06944851128764237,
+        0.07562273519588268,
+        0.08237983109663545,
+        0.010412914948419885,
+        0.07944223900895982,
+        0.08362850272781747,
+        0.07735205157012305
+      ],
+      &quot;max_end_error_m&quot;: 0.08362850272781747,
+      &quot;following_fraction&quot;: 0.6666666666666666,
+      &quot;target_visible_fraction&quot;: 1.0,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000014,
+        0.5840000000000004,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000008,
+        1.7520000000000011,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647207638396063,
+        0.02433168974929692,
+        0.028511018967992966,
+        0.13779914626229403,
+        0.21697622855033466,
+        0.11050207712814925,
+        0.017558941739343414,
+        0.027325760086197685
+      ],
+      &quot;max_end_error_m&quot;: 0.21697622855033466,
+      &quot;following_fraction&quot;: 1.0,
+      &quot;target_visible_fraction&quot;: 1.0,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000014,
+        0.5840000000000004,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000008,
+        1.7520000000000011,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.017647207638396063,
+        0.07620482182341946,
+        0.09871787110671752,
+        0.12123460407503339,
+        0.003152675969444581,
+        0.08827760510991857,
+        0.11701808143724247,
+        0.11015822449957424
+      ],
+      &quot;max_end_error_m&quot;: 0.12123460407503339,
+      &quot;following_fraction&quot;: 1.0,
+      &quot;target_visible_fraction&quot;: 1.0,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.3360000000000016,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000014,
+        0.5840000000000004,
+        0.8720000000000007,
+        1.168000000000001,
+        1.4560000000000008,
+        1.7520000000000011,
+        2.0400000000000014,
+        2.3360000000000016
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+<h2>MD2-DT-10-ACTION-t0028</h2><img src="action_review/MD2-DT-10-ACTION-t0028_paths.png">
+<img src="action_review/MD2-DT-10-ACTION-t0028_rollout.jpg"><pre>{
+  &quot;pareto_labels&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;,
+    &quot;D&quot;
+  ],
+  &quot;outcomes&quot;: {
+    &quot;A&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764651884752293,
+        0.03035837404513099,
+        0.03185287141521108,
+        0.032242650114226834,
+        0.014149073863575107,
+        0.02991494221647951,
+        0.03180077906283698,
+        0.032023206865860236
+      ],
+      &quot;max_end_error_m&quot;: 0.032242650114226834,
+      &quot;following_fraction&quot;: 0.16666666666666666,
+      &quot;target_visible_fraction&quot;: 0.625,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;B&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764651884752293,
+        0.06034506088032233,
+        0.06885875732658038,
+        0.0699449323204959,
+        0.0949113429675387,
+        0.05399194033024811,
+        0.06805738897301924,
+        0.06976725816828835
+      ],
+      &quot;max_end_error_m&quot;: 0.0949113429675387,
+      &quot;following_fraction&quot;: 0.125,
+      &quot;target_visible_fraction&quot;: 0.6458333333333334,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;C&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764651884752293,
+        0.08568693176483763,
+        0.38501134917267515,
+        0.2569678427731059,
+        0.1638078217897797,
+        0.14794019952633142,
+        0.24962047638123677,
+        0.1580820627485626
+      ],
+      &quot;max_end_error_m&quot;: 0.38501134917267515,
+      &quot;following_fraction&quot;: 0.125,
+      &quot;target_visible_fraction&quot;: 0.3958333333333333,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    },
+    &quot;D&quot;: {
+      &quot;steps&quot;: 48,
+      &quot;dt_s&quot;: 0.1,
+      &quot;full_chunk_executed&quot;: true,
+      &quot;end_errors_m&quot;: [
+        0.01764651884752293,
+        0.07729941207687606,
+        0.08489858692314915,
+        0.0887207233446379,
+        0.006218159151254407,
+        0.08900527537001338,
+        0.09296131769199212,
+        0.08560248202048015
+      ],
+      &quot;max_end_error_m&quot;: 0.09296131769199212,
+      &quot;following_fraction&quot;: 0.20833333333333334,
+      &quot;target_visible_fraction&quot;: 0.5,
+      &quot;human_collision_fraction&quot;: 0.0,
+      &quot;metric_scope&quot;: &quot;local_branch_diagnostic_not_official_episode_SR_TR_CR&quot;,
+      &quot;ever_target_collision&quot;: false,
+      &quot;gold_metric_version&quot;: &quot;instance-bound-current-frame-v2&quot;,
+      &quot;collision_scope&quot;: &quot;new contacts within branch horizon only; no prefix-latched collision inherited&quot;,
+      &quot;physical_horizon_s&quot;: 2.336000000000002,
+      &quot;waypoint_deadlines_s&quot;: [
+        0.28800000000000026,
+        0.5840000000000005,
+        0.8720000000000006,
+        1.1680000000000008,
+        1.456000000000001,
+        1.7520000000000013,
+        2.040000000000002,
+        2.336000000000002
+      ],
+      &quot;nominal_dt_metadata_not_used_for_physical_time&quot;: 0.1
+    }
+  }
+}</pre>
+</html>
