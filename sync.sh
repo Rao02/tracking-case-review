@@ -8,4 +8,12 @@ git add -- site
 if ! git diff --cached --quiet; then
   git commit -m "Update case review snapshot"
 fi
-git push origin main
+for attempt in 1 2 3; do
+  if git push origin main; then
+    exit 0
+  fi
+  if [ "$attempt" -lt 3 ]; then
+    sleep 5
+  fi
+done
+exit 1
