@@ -13,9 +13,10 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry_deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
@@ -24,4 +25,13 @@ jobs:
           path: site
       - name: Deploy
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 900000
+      - name: Retry transient Pages deployment failure once
+        id: retry_deployment
+        if: ${{ !cancelled() && steps.deployment.outcome == 'failure' }}
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 900000
