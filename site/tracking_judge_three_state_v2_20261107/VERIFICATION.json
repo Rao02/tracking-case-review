@@ -1,0 +1,3043 @@
+{
+  "retained_case_count": 5,
+  "new_complete_case_count": 4,
+  "withdrawn_scene": "MD2S-DT-04",
+  "status": "development review release; human annotation and tracking-specific admission pending",
+  "passed_execution_and_english_input_checks": true,
+  "cases": 9,
+  "task_counts": {
+    "AT": 6,
+    "DT": 3
+  },
+  "source_counts": {
+    "delayed_target_path_kinematic": 8,
+    "recorded_cpm_command_replay": 1
+  },
+  "questions": {
+    "first": 9,
+    "conditional_second": 36,
+    "state_summary": 9,
+    "total": 54
+  },
+  "complete_two_decision_paths": 144,
+  "native_executed_segments": 180,
+  "native_executed_waypoints": 1440,
+  "validated_payloads": 54,
+  "actual_model_calls": 0,
+  "interval_range_s": [
+    0.3840000000000001,
+    0.39200000000000035
+  ],
+  "replayed_actor_tolerance_manual": 1e-05,
+  "max_replayed_actor_error": 1.7881393432617188e-06,
+  "max_restored_camera_error": 3.5762786865234375e-07,
+  "max_restored_actor_error": 7.450580596923828e-07,
+  "native_pose_restore_gates": 180,
+  "max_render_MAE_255": 0.004344798900462963,
+  "actual_candidate_pairs": 270,
+  "actual_candidate_pairs_distinct": 270,
+  "max_person_fraction_in_executed_segments": 0.4717746310763889,
+  "limitations": [
+    "manual adapted motion primitives, not actor-generated proposals or literature reproduction",
+    "fixed admitted human pose replay; counterfactual actors do not react to robot",
+    "some conditional branches fail to recover target for all four choices; do not use these as evidence of tracking discrimination",
+    "local provisional safety/visibility ranking is not episode tracking success; no SR/TR/CR",
+    "small rendering deviations after native pose restoration are admitted by an explicit development tolerance, not claimed bitwise identical",
+    "isolated worker native-teardown workaround, not an upstream backend fix",
+    "independent human review pending; no model API testing requested or performed"
+  ],
+  "case_audits": [
+    {
+      "case_id": "TS1-AT-01",
+      "source_event": "MD2-AT-10",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.39200000000000035,
+        0.39200000000000035
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.21587284923196393,
+          "actual_camera_direction_difference_rad": 1.1760001476067308,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.23350731668599214,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.168128018239275,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4462767591598338,
+          "actual_camera_direction_difference_rad": 0.5880000998708859,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9656642046895237,
+          "actual_camera_direction_difference_rad": 0.5880000998708859,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3719998073771962,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.26777073603335344,
+          "actual_camera_direction_difference_rad": 0.5879999982138269,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1743697649156573,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3739901061731334,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9168236707010723,
+          "actual_camera_direction_difference_rad": 1.1760000459496716,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1851760654537853,
+          "actual_camera_direction_difference_rad": 0.5879999982138269,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6271004481974144,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.35937073828193533,
+          "actual_camera_direction_difference_rad": 0.5879999960506237,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1905057318566137,
+          "actual_camera_direction_difference_rad": 0.5879999318912349,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.4306934238088467,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8311959840210301,
+          "actual_camera_direction_difference_rad": 1.1759999279418585,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.091918775415745,
+          "actual_camera_direction_difference_rad": 0.5879999960506237,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.43635452440089306,
+          "actual_camera_direction_difference_rad": 0.5879999318912347,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1747727685315945,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5144652679150621,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5632474765439932,
+          "actual_camera_direction_difference_rad": 0.588000099870886,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3017534524720271,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2355347930091853,
+          "actual_camera_direction_difference_rad": 0.588000099870886,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0766668226752085,
+          "actual_camera_direction_difference_rad": 1.1760001476067308,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.30278464716284953,
+          "actual_camera_direction_difference_rad": 0.588000099870886,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.372000045564081,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.23568955870858066,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.111581349148626,
+          "actual_camera_direction_difference_rad": 0.5880000998708859,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.0753404233001425,
+          "actual_camera_direction_difference_rad": 1.1760001476067308,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.153214859943839,
+          "actual_camera_direction_difference_rad": 0.5880000477358447,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            4,
+            6,
+            4,
+            5
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 0
+    },
+    {
+      "case_id": "TS1-AT-02",
+      "source_event": "MD2S-AT-04",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.3840000000000001,
+        0.39200000000000035
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 1.1362500017892851,
+          "actual_camera_direction_difference_rad": 0.576000065511378,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6842933118957364,
+          "actual_camera_direction_difference_rad": 0.576000065511378,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7871711331719546,
+          "actual_camera_direction_difference_rad": 1.152000088943019,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3439999979347954,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1088171476320816,
+          "actual_camera_direction_difference_rad": 0.5760000234316417,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.32344819293551275,
+          "actual_camera_direction_difference_rad": 0.5760000234316417,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.482181132971533,
+          "actual_camera_direction_difference_rad": 1.1759992467480698,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.19127867681090788,
+          "actual_camera_direction_difference_rad": 0.5879999884989925,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1870097381656421,
+          "actual_camera_direction_difference_rad": 0.5879999884989925,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3714513216973214,
+          "actual_camera_direction_difference_rad": 0.5879992582490775,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1926239459377148,
+          "actual_camera_direction_difference_rad": 0.5879992582490775,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9957313549815439,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2341962941388278,
+          "actual_camera_direction_difference_rad": 0.5879999940681097,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.371999925710332,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1555171102499313,
+          "actual_camera_direction_difference_rad": 0.5880000603639697,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6258622829794985,
+          "actual_camera_direction_difference_rad": 0.5879999940681097,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7076857898784755,
+          "actual_camera_direction_difference_rad": 1.176000054432079,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.26701045696280495,
+          "actual_camera_direction_difference_rad": 0.5880000603639697,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.25745040160717564,
+          "actual_camera_direction_difference_rad": 1.176000054432079,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0938485196491485,
+          "actual_camera_direction_difference_rad": 0.5879999940681097,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.29720783353542307,
+          "actual_camera_direction_difference_rad": 0.5879999940681097,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1258991435319547,
+          "actual_camera_direction_difference_rad": 0.5880000603639699,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4623025406113104,
+          "actual_camera_direction_difference_rad": 0.5880000603639699,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3720001610133876,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1870099052514247,
+          "actual_camera_direction_difference_rad": 0.5880006117544755,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.360959284628611,
+          "actual_camera_direction_difference_rad": 1.176000704727194,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.26730641890853996,
+          "actual_camera_direction_difference_rad": 0.5880006117544755,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8526414945359085,
+          "actual_camera_direction_difference_rad": 0.588000092972719,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.29920393625058,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.45106632594042056,
+          "actual_camera_direction_difference_rad": 0.5880000929727188,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 1048
+    },
+    {
+      "case_id": "TS1-AT-03",
+      "source_event": "MD2S-AT-07",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.3920000000000001,
+        0.38400000000000034
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.3472966294451241,
+          "actual_camera_direction_difference_rad": 0.588000348309835,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6593555209778712,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3720002278692767,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.34129365578921367,
+          "actual_camera_direction_difference_rad": 0.5879998873837182,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6593555209778712,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.040273203178892,
+          "actual_camera_direction_difference_rad": 0.588000348309835,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873742219890073,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.29979089629907935,
+          "actual_camera_direction_difference_rad": 1.1760002356935537,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140924,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.117064236660344,
+          "actual_camera_direction_difference_rad": 0.5879998873837182,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1873742219890073,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.344000100474327,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.45078229243105333,
+          "actual_camera_direction_difference_rad": 0.5760000056166664,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.47774382203694915,
+          "actual_camera_direction_difference_rad": 0.5759997980786227,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8933166811072115,
+          "actual_camera_direction_difference_rad": 0.5760000056166664,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9772039869686993,
+          "actual_camera_direction_difference_rad": 0.5759997980786227,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2708523030159321,
+          "actual_camera_direction_difference_rad": 1.1519998036952894,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1807330739919777,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1670113495871284,
+          "actual_camera_direction_difference_rad": 0.5759999642726424,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.27187489215870175,
+          "actual_camera_direction_difference_rad": 0.5760001645856331,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.015493269690882898,
+          "actual_camera_direction_difference_rad": 0.5759999642726424,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9342689397952901,
+          "actual_camera_direction_difference_rad": 0.5760001645856331,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9214279245301035,
+          "actual_camera_direction_difference_rad": 1.1520001288582757,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3439996263024743,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2875100854802068,
+          "actual_camera_direction_difference_rad": 0.5759997980786227,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.36595637359877137,
+          "actual_camera_direction_difference_rad": 0.5760000056166664,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1116787495831484,
+          "actual_camera_direction_difference_rad": 0.5759997980786227,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0102839227617977,
+          "actual_camera_direction_difference_rad": 0.5760000056166664,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.30044178398014226,
+          "actual_camera_direction_difference_rad": 1.1519998036952894,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.34354573562415386,
+          "actual_camera_direction_difference_rad": 0.5759998833108787,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7580688494395468,
+          "actual_camera_direction_difference_rad": 0.5759998833108787,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4201689624735131,
+          "actual_camera_direction_difference_rad": 1.1519999297759436,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0990490655444054,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.19209196853527347,
+          "actual_camera_direction_difference_rad": 0.5760000464650648,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.164388950000507,
+          "actual_camera_direction_difference_rad": 0.5760000464650648,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 806
+    },
+    {
+      "case_id": "TS1-DT-04",
+      "source_event": "MD2-DT-10",
+      "task": "DT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.38400000000000034,
+        0.39200000000000035
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 1.343998495241057,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1637579440246753,
+          "actual_camera_direction_difference_rad": 0.5759998943108616,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.164389110219015,
+          "actual_camera_direction_difference_rad": 0.5759999839421998,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.21066991937553178,
+          "actual_camera_direction_difference_rad": 0.5759998943108616,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6416688597747248,
+          "actual_camera_direction_difference_rad": 0.5759999839421998,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4742905277290869,
+          "actual_camera_direction_difference_rad": 1.1519998782530614,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.19107975304245767,
+          "actual_camera_direction_difference_rad": 0.5880004662585362,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3719997340764352,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6592787351192404,
+          "actual_camera_direction_difference_rad": 0.5879998780026645,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.211537402767663,
+          "actual_camera_direction_difference_rad": 0.5880004662585362,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5012713782985887,
+          "actual_camera_direction_difference_rad": 1.1760003442612006,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1870094005139307,
+          "actual_camera_direction_difference_rad": 0.5879998780026645,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7293607146339962,
+          "actual_camera_direction_difference_rad": 1.1760003442612006,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6592787351192404,
+          "actual_camera_direction_difference_rad": 0.5879998780026645,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1870094005139307,
+          "actual_camera_direction_difference_rad": 0.5879998780026645,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.0700906032535575,
+          "actual_camera_direction_difference_rad": 0.5880004662585362,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.4075069332958177,
+          "actual_camera_direction_difference_rad": 0.5880004662585362,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3719997340764352,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1124379380028864,
+          "actual_camera_direction_difference_rad": 0.5880002677460004,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.39756107223258585,
+          "actual_camera_direction_difference_rad": 0.5879996490580756,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.5359314701637248,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7750068776388535,
+          "actual_camera_direction_difference_rad": 1.1759999168040762,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.424314720570207,
+          "actual_camera_direction_difference_rad": 0.5880002677460004,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1870097712215903,
+          "actual_camera_direction_difference_rad": 0.5879996490580756,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.20689785488188595,
+          "actual_camera_direction_difference_rad": 0.5880003037264223,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3719996886400556,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6592789911449305,
+          "actual_camera_direction_difference_rad": 0.5880000773488799,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592787329104436,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2404512181643097,
+          "actual_camera_direction_difference_rad": 0.5880003037264223,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.746379724834421,
+          "actual_camera_direction_difference_rad": 1.1760003810753024,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140424,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.187009142905208,
+          "actual_camera_direction_difference_rad": 0.5880000773488799,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.187010301416125,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 1106
+    },
+    {
+      "case_id": "TS1-DT-06",
+      "source_event": "MD3-DT-03",
+      "task": "DT",
+      "source_mode": "recorded_cpm_command_replay",
+      "intervals_s": [
+        0.39200000000000035,
+        0.3920000000000001
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.44366963342934435,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592818628151391,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7956597752487793,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592818628151391,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.371999941101869,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8744878114227715,
+          "actual_camera_direction_difference_rad": 1.1759999323760786,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.140538,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0549649991276828,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1871183726305476,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0163755255774722,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1871183726305476,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0396778332428633,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.535070799478013,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.32991318961972466,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3003368609071442,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9494943361035195,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8630285132145593,
+          "actual_camera_direction_difference_rad": 1.1759999323760786,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1873259825148454,
+          "actual_camera_direction_difference_rad": 0.5880001977440451,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6242747323138648,
+          "actual_camera_direction_difference_rad": 1.1759999725960757,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7504263376661343,
+          "actual_camera_direction_difference_rad": 0.5880001977440451,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2823266041365404,
+          "actual_camera_direction_difference_rad": 0.5879997748520304,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3549223234751147,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.12758079757380053,
+          "actual_camera_direction_difference_rad": 0.5879997748520304,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3925673836802458,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.09451219952511855,
+          "actual_camera_direction_difference_rad": 0.5879999011828989,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7286396330403613,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3181977221908808,
+          "actual_camera_direction_difference_rad": 0.5879999011828989,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9286471890862138,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7091564112512211,
+          "actual_camera_direction_difference_rad": 1.1759996373587922,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8689793546403237,
+          "actual_camera_direction_difference_rad": 1.1759999323760786,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6760680043330553,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.185843308087513,
+          "actual_camera_direction_difference_rad": 0.5879997361758935,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.45222904059736246,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0595047583156867,
+          "actual_camera_direction_difference_rad": 0.5880001962001852,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3720001795140744,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            3,
+            8,
+            8,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            4,
+            8,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 1354
+    },
+    {
+      "case_id": "TS2-DT-04",
+      "source_event": "MD2-DT-06",
+      "task": "DT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.39200000000000035,
+        0.39200000000000035
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.6028861472308857,
+          "actual_camera_direction_difference_rad": 1.1760000525198748,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140538,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9580494062405975,
+          "actual_camera_direction_difference_rad": 0.5880000985545542,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1871183726305476,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4670887348748545,
+          "actual_camera_direction_difference_rad": 0.5880000985545542,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592818628151391,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1342860433069561,
+          "actual_camera_direction_difference_rad": 0.5879999539653211,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1871183726305476,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.20378867057211786,
+          "actual_camera_direction_difference_rad": 0.5879999539653211,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6592818628151391,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1804994012057963,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1637655167511578,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.16175568459106274,
+          "actual_camera_direction_difference_rad": 0.5880001204257788,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7395375656269589,
+          "actual_camera_direction_difference_rad": 0.5880000985545542,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3242316728411785,
+          "actual_camera_direction_difference_rad": 0.5880001204257788,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1320993208140553,
+          "actual_camera_direction_difference_rad": 0.5880000985545542,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7927279034032393,
+          "actual_camera_direction_difference_rad": 1.1760002189803325,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7272973556901142,
+          "actual_camera_direction_difference_rad": 0.5880000419266296,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0238322823450325,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1873259583472335,
+          "actual_camera_direction_difference_rad": 0.5879997789025773,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3022155440944501,
+          "actual_camera_direction_difference_rad": 0.5880000419266296,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.48291181720870685,
+          "actual_camera_direction_difference_rad": 1.1759998208292068,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.19160016504243754,
+          "actual_camera_direction_difference_rad": 0.5879997789025773,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9800000003923682,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.39463146657638754,
+          "actual_camera_direction_difference_rad": 0.5879999539653213,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4310415337305325,
+          "actual_camera_direction_difference_rad": 0.5880003427190448,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.594264215777001,
+          "actual_camera_direction_difference_rad": 0.5879999539653213,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7660641748188857,
+          "actual_camera_direction_difference_rad": 0.5880003427190448,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.40150153812380013,
+          "actual_camera_direction_difference_rad": 1.1760002966843657,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.919927363418812,
+          "actual_camera_direction_difference_rad": 0.5880003427190448,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3720000482033174,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9663247513885337,
+          "actual_camera_direction_difference_rad": 0.5879999539653213,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1873258950115593,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8130555821904873,
+          "actual_camera_direction_difference_rad": 0.5880003427190448,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7374979720595869,
+          "actual_camera_direction_difference_rad": 1.1760002966843657,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140836,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4612885322864186,
+          "actual_camera_direction_difference_rad": 0.5879999539653213,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.659333000057634,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            2,
+            8,
+            0,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            8,
+            2,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            8,
+            5,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 3583
+    },
+    {
+      "case_id": "TS2-AT-01",
+      "source_event": "MD2-AT-09",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.38400000000000034,
+        0.3920000000000001
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 1.3162596358933571,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.48956457935931136,
+          "actual_camera_direction_difference_rad": 0.5760001957210115,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.41015208679614495,
+          "actual_camera_direction_difference_rad": 0.5759998844633087,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8531511739347006,
+          "actual_camera_direction_difference_rad": 0.5760001957210115,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1762997081395836,
+          "actual_camera_direction_difference_rad": 0.5759998844633087,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5603488928807008,
+          "actual_camera_direction_difference_rad": 1.1520000801843204,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6420038582083328,
+          "actual_camera_direction_difference_rad": 0.5879999737371178,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.674530648126721,
+          "actual_camera_direction_difference_rad": 0.5879999737371178,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5603800853717711,
+          "actual_camera_direction_difference_rad": 1.1759999729959087,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.140478,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.311769828556584,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.187063856075544,
+          "actual_camera_direction_difference_rad": 0.5879999992587912,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3196916564354048,
+          "actual_camera_direction_difference_rad": 0.5879999992587912,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6930716101952585,
+          "actual_camera_direction_difference_rad": 0.5879999737371178,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7819867553303079,
+          "actual_camera_direction_difference_rad": 1.1759999729959087,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.140478,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8110540593429144,
+          "actual_camera_direction_difference_rad": 0.5879999737371178,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.29244064746269993,
+          "actual_camera_direction_difference_rad": 0.5879999992587912,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3720000965043462,
+          "actual_camera_direction_difference_rad": 2.1073424255447017e-08,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3021526579996114,
+          "actual_camera_direction_difference_rad": 0.5879999992587912,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1445292133062728,
+          "actual_camera_direction_difference_rad": 1.1760003592862074,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.140478,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5432331463493671,
+          "actual_camera_direction_difference_rad": 0.5880000475794196,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.12856059290737692,
+          "actual_camera_direction_difference_rad": 0.5880000475794196,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6014153990149563,
+          "actual_camera_direction_difference_rad": 0.5880003117067877,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2515350702792285,
+          "actual_camera_direction_difference_rad": 0.5880003117067877,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6532186630212039,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3600109579803388,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4726563047559377,
+          "actual_camera_direction_difference_rad": 0.5880005096600393,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.19201456614778176,
+          "actual_camera_direction_difference_rad": 0.5879997289118201,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592784963594672,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1335125413865086,
+          "actual_camera_direction_difference_rad": 0.5880005096600393,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.2116215566363873,
+          "actual_camera_direction_difference_rad": 0.5879997289118201,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1870644935141477,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.29207491708059374,
+          "actual_camera_direction_difference_rad": 1.1760002385718593,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.140478,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            2,
+            2,
+            8,
+            4
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            1,
+            3,
+            8,
+            1
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 2738
+    },
+    {
+      "case_id": "TS2-AT-02",
+      "source_event": "MD2-AT-10",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.39200000000000035,
+        0.3840000000000001
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.24108068375198377,
+          "actual_camera_direction_difference_rad": 0.5879998775544188,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2595251884770121,
+          "actual_camera_direction_difference_rad": 0.5880000505521232,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3719998774348328,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.06573658524603253,
+          "actual_camera_direction_difference_rad": 1.175999928106542,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.1760000000000002
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1428550618561755,
+          "actual_camera_direction_difference_rad": 0.5879998775544188,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.112665256309091,
+          "actual_camera_direction_difference_rad": 0.5880000505521232,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.23682692685491455,
+          "actual_camera_direction_difference_rad": 0.5759998701304895,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1187759421800334,
+          "actual_camera_direction_difference_rad": 0.5759998701304895,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.07286375077262598,
+          "actual_camera_direction_difference_rad": 1.1520002549848611,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.343999971436579,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2929913542780766,
+          "actual_camera_direction_difference_rad": 0.5760003848543718,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0896242992246514,
+          "actual_camera_direction_difference_rad": 0.5760003848543718,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1673908291719586,
+          "actual_camera_direction_difference_rad": 0.5759997842368313,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5916309925879819,
+          "actual_camera_direction_difference_rad": 0.5760000982123309,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.238424627151454,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5759307443871373,
+          "actual_camera_direction_difference_rad": 1.1519998824491622,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.16315689272885747,
+          "actual_camera_direction_difference_rad": 0.5759997842368313,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.6530443070840453,
+          "actual_camera_direction_difference_rad": 0.5760000982123307,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8813927296604709,
+          "actual_camera_direction_difference_rad": 1.152000535221427,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.06386976284756446,
+          "actual_camera_direction_difference_rad": 0.5760004607429344,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1511695815469911,
+          "actual_camera_direction_difference_rad": 0.5760004607429344,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9321043332946698,
+          "actual_camera_direction_difference_rad": 0.5760000744784923,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.28081967683685005,
+          "actual_camera_direction_difference_rad": 0.5760000744784923,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1985838852445925,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0725807875462787,
+          "actual_camera_direction_difference_rad": 0.5759998701304895,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3439998523431216,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1275246632873264,
+          "actual_camera_direction_difference_rad": 0.5760003848543718,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2722847018441989,
+          "actual_camera_direction_difference_rad": 0.5759998701304895,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.08454292019891782,
+          "actual_camera_direction_difference_rad": 1.1520002549848611,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.2221049480947212,
+          "actual_camera_direction_difference_rad": 0.5760003848543718,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            8,
+            8,
+            8,
+            5
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            8,
+            8,
+            1,
+            3
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            8,
+            4,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": false
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 2062
+    },
+    {
+      "case_id": "TS2-AT-03",
+      "source_event": "MD2-AT-06",
+      "task": "AT",
+      "source_mode": "delayed_target_path_kinematic",
+      "intervals_s": [
+        0.39200000000000024,
+        0.38400000000000034
+      ],
+      "executed_segments": 20,
+      "complete_paths": 16,
+      "pose_camera_gates_passed": 20,
+      "candidate_pairs": [
+        {
+          "actual_endpoint_position_difference_m": 0.20359268498340694,
+          "actual_camera_direction_difference_rad": 0.5879998160544387,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1116815001897715,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3719999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.23926791986781556,
+          "actual_camera_direction_difference_rad": 0.5880000459936673,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6592999061830663,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9576848706432669,
+          "actual_camera_direction_difference_rad": 0.5879998160544387,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.15205120840768907,
+          "actual_camera_direction_difference_rad": 1.1759998620481062,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.140676,
+          "planned_final_heading_difference_rad": 1.176
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.87257001799432,
+          "actual_camera_direction_difference_rad": 0.5880000459936673,
+          "actual_endpoint_distinct": true,
+          "decision": "S0",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1872243150698185,
+          "planned_final_heading_difference_rad": 0.5880000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3345792152348273,
+          "actual_camera_direction_difference_rad": 0.5760000371427743,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.3440000046737912,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1187284167591516,
+          "actual_camera_direction_difference_rad": 0.5759997503776431,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3191660900641331,
+          "actual_camera_direction_difference_rad": 0.5760000371427743,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.3367328712313404,
+          "actual_camera_direction_difference_rad": 1.1519997875204173,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.152
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.22766658562542377,
+          "actual_camera_direction_difference_rad": 0.5759997503776431,
+          "actual_endpoint_distinct": true,
+          "decision": "A",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.1811121783352942,
+          "actual_camera_direction_difference_rad": 0.5760003942531728,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.4411492220975543,
+          "actual_camera_direction_difference_rad": 0.5760003942531728,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.736611549964303,
+          "actual_camera_direction_difference_rad": 1.15200031182253,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.4010940006580586,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.5012795131698714,
+          "actual_camera_direction_difference_rad": 0.5759999175693573,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.0547448489628937,
+          "actual_camera_direction_difference_rad": 0.5759999175693573,
+          "actual_endpoint_distinct": true,
+          "decision": "B",
+          "labels": "CD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.9599999905701958,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AB",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.24074509022922316,
+          "actual_camera_direction_difference_rad": 0.5759997503776431,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.20328384424939117,
+          "actual_camera_direction_difference_rad": 0.5760000371427743,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "AD",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.7192585866694663,
+          "actual_camera_direction_difference_rad": 0.5759997503776431,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BC",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8055479082122975,
+          "actual_camera_direction_difference_rad": 0.5760000371427743,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.1442703349152037,
+          "actual_camera_direction_difference_rad": 1.1519997875204173,
+          "actual_endpoint_distinct": true,
+          "decision": "C",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8533731622388019,
+          "actual_camera_direction_difference_rad": 0.5760001391620598,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AB",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.8032754477322701,
+          "actual_camera_direction_difference_rad": 1.1520000747365986,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AC",
+          "planned_max_position_difference_m": 1.11146,
+          "planned_final_heading_difference_rad": 1.1520000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.45218888155334475,
+          "actual_camera_direction_difference_rad": 0.5760001391620598,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "AD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 0.088379350568219,
+          "actual_camera_direction_difference_rad": 0.5759999355745387,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BC",
+          "planned_max_position_difference_m": 0.6416698000287998,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.24612847766128,
+          "actual_camera_direction_difference_rad": 0.0,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "BD",
+          "planned_max_position_difference_m": 1.3439999999999999,
+          "planned_final_heading_difference_rad": 0.0
+        },
+        {
+          "actual_endpoint_position_difference_m": 1.180333109220174,
+          "actual_camera_direction_difference_rad": 0.5759999355745387,
+          "actual_endpoint_distinct": true,
+          "decision": "D",
+          "labels": "CD",
+          "planned_max_position_difference_m": 1.1643885417973676,
+          "planned_final_heading_difference_rad": 0.5760000000000001
+        }
+      ],
+      "conditional_branch_diagnostics": [
+        {
+          "first_choice": "A",
+          "visible_steps": [
+            8,
+            8,
+            5,
+            3
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "B",
+          "visible_steps": [
+            6,
+            8,
+            8,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "C",
+          "visible_steps": [
+            8,
+            8,
+            4,
+            8
+          ],
+          "tracking_visibility_discriminates": true,
+          "all_four_lose_target": false
+        },
+        {
+          "first_choice": "D",
+          "visible_steps": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "tracking_visibility_discriminates": false,
+          "all_four_lose_target": true
+        }
+      ],
+      "summary_last_frame_target_pixels_private": 2635
+    }
+  ],
+  "new_primary_segments": 80,
+  "reused_primary_segments": 100,
+  "extra_parent_reexecution_segments": 16,
+  "retained_original_cases_unchanged": true
+}

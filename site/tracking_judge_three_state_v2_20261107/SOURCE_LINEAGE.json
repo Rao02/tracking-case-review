@@ -1,0 +1,83 @@
+[
+  {
+    "case_id": "TS1-AT-01",
+    "source_event": "MD2-AT-10",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "6a558badfcd2ef1cb9cc",
+    "scene_id": "data/scene_datasets/hm3d/val/00884-XMHNu9rRQ1y/XMHNu9rRQ1y.basis.glb",
+    "source_trace_sha256": "489cd76f6d3e260d8a36be1e817c4f474b0d3aab37cb06cacb1367c6c6aeba84"
+  },
+  {
+    "case_id": "TS1-AT-02",
+    "source_event": "MD2S-AT-04",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "e51e243d27bdc2ca1560",
+    "scene_id": "data/scene_datasets/hm3d/val/00860-RJaJt8UjXav/RJaJt8UjXav.basis.glb",
+    "source_trace_sha256": "55366ebf3472408c2814e988c1defdbe22821008772ceb02e4211427c0ac7180"
+  },
+  {
+    "case_id": "TS1-AT-03",
+    "source_event": "MD2S-AT-07",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "1072969b9e974bd379d6",
+    "scene_id": "data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+    "source_trace_sha256": "b5bb2d1895606f0b6b562bac3843fa1d59be4cb7615de68528ef98408ed12649"
+  },
+  {
+    "case_id": "TS1-DT-04",
+    "source_event": "MD2-DT-10",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "30d1637e7a2c055151e8",
+    "scene_id": "data/scene_datasets/hm3d/val/00894-HY1NcmCgn3n/HY1NcmCgn3n.basis.glb",
+    "source_trace_sha256": "be7b96cd76ae6b404cf8a835bd4ee09b6137e24ae5fa9c532d462026e9d84f57"
+  },
+  {
+    "case_id": "TS1-DT-06",
+    "source_event": "MD3-DT-03",
+    "admission": "verified_complete_success_CPM",
+    "capture_mode": "recorded_cpm_command_replay",
+    "episode_family": "caddbbeb568a943feedb",
+    "scene_id": "data/scene_datasets/hm3d/val/00829-QaLdnwvtxbs/QaLdnwvtxbs.basis.glb",
+    "source_trace_sha256": "54affa448270c4773c591916b86310862678314842429ae6a481aac66b17f5a0"
+  },
+  {
+    "case_id": "TS2-AT-01",
+    "source_event": "MD2-AT-09",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "7d9165e322fd9d376687",
+    "scene_id": "data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+    "source_trace_sha256": "0fa0c6238084603eed2a5533e562b1924f9be4566e16334be2f2b6a762b51c2a"
+  },
+  {
+    "case_id": "TS2-AT-02",
+    "source_event": "MD2-AT-10",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "6a558badfcd2ef1cb9cc",
+    "scene_id": "data/scene_datasets/hm3d/val/00884-XMHNu9rRQ1y/XMHNu9rRQ1y.basis.glb",
+    "source_trace_sha256": "489cd76f6d3e260d8a36be1e817c4f474b0d3aab37cb06cacb1367c6c6aeba84"
+  },
+  {
+    "case_id": "TS2-AT-03",
+    "source_event": "MD2-AT-06",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "0cf959e5456c09912ab7",
+    "scene_id": "data/scene_datasets/hm3d/val/00850-W7k2QWzBrFY/W7k2QWzBrFY.basis.glb",
+    "source_trace_sha256": "282ec20a0c8ae174f00386ee5744ec6adc9540312d9be4629932da565ec7caa2"
+  },
+  {
+    "case_id": "TS2-DT-04",
+    "source_event": "MD2-DT-06",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "4e47b6a1a477b38f6ac7",
+    "scene_id": "data/scene_datasets/hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+    "source_trace_sha256": "162b22dc5afad5adb7d6bdffb8e1334a98037f46ef08ef07c59f3adb1d3fd523"
+  }
+]
