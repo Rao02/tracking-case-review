@@ -18,6 +18,9 @@ def main():
     # Isolated preview release; frozen main cohorts remain unchanged.
     preview=Path('tracking_judge_three_state_v1_20261106/review.html')
     if (ROOT/preview).is_file(): pending.append(preview)
+    # Keep the former summary-only URL as a redirect to the complete review.
+    partial=Path('tracking_judge_state_partial_v2_20261107/review.html')
+    if (ROOT/partial).is_file(): pending.append(partial)
     while pending:
         rel=pending.pop()
         if rel in content: continue
