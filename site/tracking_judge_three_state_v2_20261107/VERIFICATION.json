@@ -3039,5 +3039,8 @@
   "new_primary_segments": 80,
   "reused_primary_segments": 100,
   "extra_parent_reexecution_segments": 16,
-  "retained_original_cases_unchanged": true
+  "retained_original_cases_unchanged": true,
+  "max_person_fraction_in_action_input_views": 0.09387885199652778,
+  "all_action_input_views_people_under_30_percent": true,
+  "new_at06_final_gates_use_original_strict_tolerance": true
 }
