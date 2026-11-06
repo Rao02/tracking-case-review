@@ -15,6 +15,9 @@ class Links(HTMLParser):
             if k in ('src','href') and v: self.refs.append(v)
 def main():
     pending=[ENTRY]; content={}; missing=[]
+    # Isolated preview release; frozen main cohorts remain unchanged.
+    preview=Path('tracking_judge_three_state_v1_20261106/review.html')
+    if (ROOT/preview).is_file(): pending.append(preview)
     while pending:
         rel=pending.pop()
         if rel in content: continue
