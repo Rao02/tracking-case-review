@@ -2036,5 +2036,7 @@
       ],
       "summary_last_frame_target_pixels_private": 1354
     }
-  ]
+  ],
+  "max_person_fraction_in_model_input_scene_views": 0.09617784288194445,
+  "model_input_scene_views_no_person_over_30_percent": true
 }
