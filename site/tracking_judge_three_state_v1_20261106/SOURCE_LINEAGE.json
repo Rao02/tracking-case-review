@@ -1,0 +1,56 @@
+[
+  {
+    "case_id": "TS1-AT-01",
+    "source_event": "MD2-AT-10",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "6a558badfcd2ef1cb9cc",
+    "scene_id": "data/scene_datasets/hm3d/val/00884-XMHNu9rRQ1y/XMHNu9rRQ1y.basis.glb",
+    "source_trace_sha256": "489cd76f6d3e260d8a36be1e817c4f474b0d3aab37cb06cacb1367c6c6aeba84"
+  },
+  {
+    "case_id": "TS1-AT-02",
+    "source_event": "MD2S-AT-04",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "e51e243d27bdc2ca1560",
+    "scene_id": "data/scene_datasets/hm3d/val/00860-RJaJt8UjXav/RJaJt8UjXav.basis.glb",
+    "source_trace_sha256": "55366ebf3472408c2814e988c1defdbe22821008772ceb02e4211427c0ac7180"
+  },
+  {
+    "case_id": "TS1-AT-03",
+    "source_event": "MD2S-AT-07",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "1072969b9e974bd379d6",
+    "scene_id": "data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+    "source_trace_sha256": "b5bb2d1895606f0b6b562bac3843fa1d59be4cb7615de68528ef98408ed12649"
+  },
+  {
+    "case_id": "TS1-DT-04",
+    "source_event": "MD2-DT-10",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "30d1637e7a2c055151e8",
+    "scene_id": "data/scene_datasets/hm3d/val/00894-HY1NcmCgn3n/HY1NcmCgn3n.basis.glb",
+    "source_trace_sha256": "be7b96cd76ae6b404cf8a835bd4ee09b6137e24ae5fa9c532d462026e9d84f57"
+  },
+  {
+    "case_id": "TS1-DT-05",
+    "source_event": "MD2S-DT-04",
+    "admission": "existing_delayed_tracking",
+    "capture_mode": "delayed_target_path_kinematic",
+    "episode_family": "b38f5683df51b185d522",
+    "scene_id": "data/scene_datasets/hm3d/val/00815-h1zeeAwLh9Z/h1zeeAwLh9Z.basis.glb",
+    "source_trace_sha256": "1f53ddaeb35313f7d05a831eaeaca0d0a8197f1a4faf267f695f1743cc859b74"
+  },
+  {
+    "case_id": "TS1-DT-06",
+    "source_event": "MD3-DT-03",
+    "admission": "verified_complete_success_CPM",
+    "capture_mode": "recorded_cpm_command_replay",
+    "episode_family": "caddbbeb568a943feedb",
+    "scene_id": "data/scene_datasets/hm3d/val/00829-QaLdnwvtxbs/QaLdnwvtxbs.basis.glb",
+    "source_trace_sha256": "54affa448270c4773c591916b86310862678314842429ae6a481aac66b17f5a0"
+  }
+]
