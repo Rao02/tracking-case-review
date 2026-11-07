@@ -24,6 +24,15 @@ def main():
     # User-requested isolated one-case option-role preview; main cohort stays frozen.
     role_preview=Path('tracking_judge_option_roles_preview_20261107/review.html')
     if (ROOT/role_preview).is_file(): pending.append(role_preview)
+    # User-authorized expanded visual/action release: publish only after simulator
+    # and actual-browser verification artifacts are both present and passed.
+    scaleup=Path('tracking_judge_four_role_scaleup_v6_20261107')
+    gates=[ROOT/scaleup/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
+    if (ROOT/scaleup/'review.html').is_file() and all(f.is_file() and json.loads(f.read_text()).get('passed') for f in gates):
+        pending.append(scaleup/'review.html')
+        # The viewer injects image src from JSON at runtime. HTML link parsing
+        # alone sees reference preloads, but misses charts and audit endpoints.
+        pending.extend(scaleup/'media'/f.name for f in (ROOT/scaleup/'media').glob('*.png'))
     while pending:
         rel=pending.pop()
         if rel in content: continue
