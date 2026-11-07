@@ -1,0 +1,17 @@
+[
+  {
+    "case_id": "TV5P-DT-03",
+    "parent_id": "TV4C-DT-03",
+    "source_event": "MD2-DT-01",
+    "mode": "recorded_cpm_command_replay",
+    "admission": "verified_complete_success_CPM",
+    "episode_family": "42f0b570e7f5fdbcd529",
+    "scene_id": "data/scene_datasets/hm3d/val/00811-7UrtFsADwob/7UrtFsADwob.basis.glb",
+    "source_capture_sha256": "dcc71326596d63dcf763e8eb7b220585e92cea576ef2352eeda144e3bb428333",
+    "source_anchor_tick": 52,
+    "source_anchor_time_s": 2.576000000000002,
+    "source_anchor_RGB_exact": true,
+    "reference_provenance": "registered delayed-path trace or successful CPM command replay -> native-controller executed adaptation; fixed other-actor pose replay, no interactive reaction",
+    "counterfactual_option_provenance": "manual perturbation of source-shaped executed trajectory; native feasibility verified"
+  }
+]

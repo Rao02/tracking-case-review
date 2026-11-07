@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "sources": [
+    {
+      "case_id": "TV5P-DT-03",
+      "source_run_id": "CPM-DT-076",
+      "task": "DT",
+      "episode_family": "42f0b570e7f5fdbcd529",
+      "success": true,
+      "finish": true,
+      "status": "Normal",
+      "control_sha256": "bf4e5bec054f0b7550f3c93b1074e79f2fbb1976cbfe45c2ee1dbfc5a85466a3",
+      "video_sha256": "dbcda6440ec6149c9ebcbb6065bd356822935491ec270e14e31518d7616f4d1c",
+      "control_steps": 90,
+      "fully_decoded_frames": 90,
+      "passed": true,
+      "recapture_is_adapted_not_original_video": true
+    }
+  ]
+}

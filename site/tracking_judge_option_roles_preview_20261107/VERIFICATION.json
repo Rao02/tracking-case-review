@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "cases": 1,
+  "subquestions": 2,
+  "native_executed_published_options": 8,
+  "native_waypoints": 64,
+  "candidate_pairs": 12,
+  "per_option_explanations": 8,
+  "reference_transition_checks": 2,
+  "weak_TV3A_AT_01_removed": true,
+  "fixed_views_per_case": 3,
+  "choice_dependent_views": false,
+  "source_reference_derived_labels": true,
+  "all_candidates_zero_navmesh_blocked_steps": true,
+  "all_candidates_zero_target_too_close_steps": true,
+  "max_published_waypoint_error_m": 1.2340394890666092e-07,
+  "model_API_calls": 0,
+  "max_published_heading_error_rad": 2.2647744701842498e-07,
+  "scope": "adapted observed visual-action correspondence development release; no official SR/TR/CR; independent human ambiguity review pending",
+  "manual_development_gates": {
+    "max_WP_error_m": 0.025,
+    "min_pair_max_position_m_or_yaw_rad": [
+      0.08,
+      0.12
+    ],
+    "min_pair_endpoint_RGB_MAE_255": 2.0,
+    "person_fraction_limit": 0.15,
+    "terminal_target_min_pixels": 500
+  },
+  "cases_detail": [
+    {
+      "case_id": "TV5P-DT-03",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.7037323894661391,
+          "max_yaw_rad": 0.00571799999999989,
+          "endpoint_RGB_MAE_255": 61.511067708333336
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.13004783347801
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 62.10279450593171
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.4229635624094525,
+          "max_yaw_rad": 0.00571799999999989,
+          "endpoint_RGB_MAE_255": 60.370449490017364
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.7288597557106824,
+          "max_yaw_rad": 0.800217,
+          "endpoint_RGB_MAE_255": 54.89720549406829
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3822106565717393,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 59.57580114293982
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 1.7874176689257606,
+          "max_yaw_rad": 0.004537000000000013,
+          "endpoint_RGB_MAE_255": 47.698373300057874
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.5198873814621923,
+          "max_yaw_rad": 0.004537000000000013,
+          "endpoint_RGB_MAE_255": 46.42566596137153
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.8130603749428753,
+          "max_yaw_rad": 0.8000449999999999,
+          "endpoint_RGB_MAE_255": 56.839052553530095
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.2675501103643952,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.6166833948206
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 51.01761429398148
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3742299581220082,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 49.652242024739586
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.034783257378472224,
+      "target_pixels": [
+        2811,
+        2890,
+        5129
+      ]
+    }
+  ],
+  "unchanged_reference_images": 3,
+  "user_requested_roles_per_question": [
+    "source_reference",
+    "modified_reference",
+    "obvious_wrong",
+    "wrong_direction"
+  ],
+  "new_CPM_success_source_cases": 1,
+  "fresh_original_CPM_sources_success_hash_full_decode_rechecked": 1
+}

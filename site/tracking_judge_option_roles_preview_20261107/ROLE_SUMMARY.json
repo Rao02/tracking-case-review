@@ -1,0 +1,254 @@
+{
+  "case_id": "TV5P-DT-03",
+  "correct_choices": [
+    "A",
+    "B"
+  ],
+  "options": [
+    {
+      "question": 1,
+      "label": "A",
+      "role": "source_reference",
+      "role_zh": "正确项：源参考轨迹",
+      "endpoint_local_xyyaw": [
+        1.40307,
+        0.047504,
+        0.000217
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 2890,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 0.0,
+      "numeric_difference": {
+        "delta_forward_m": 0.0,
+        "delta_left_m": 0.0,
+        "delta_yaw_deg": 0.0,
+        "path_length_difference_m": 0.0,
+        "endpoint_direction_cosine": 1.0000000000000002,
+        "static_background_RGB_MAE_255": 0.0,
+        "target_centroid_delta_px": [
+          0.0,
+          0.0
+        ],
+        "reference_target_pixels": 2890,
+        "option_target_pixels": 2890
+      }
+    },
+    {
+      "question": 1,
+      "label": "B",
+      "role": "obvious_wrong",
+      "role_zh": "明显错误项：反向后退",
+      "endpoint_local_xyyaw": [
+        -0.3,
+        0.0,
+        -0.0
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 1021,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.2137662853405805e-07,
+      "numeric_difference": {
+        "delta_forward_m": -1.70307,
+        "delta_left_m": -0.047504,
+        "delta_yaw_deg": -0.012433184154346527,
+        "path_length_difference_m": -1.1038931149938673,
+        "endpoint_direction_cosine": -0.9994273378142392,
+        "static_background_RGB_MAE_255": 61.72370329880691,
+        "target_centroid_delta_px": [
+          -1.6809414069251716,
+          4.294245074880791
+        ],
+        "reference_target_pixels": 2890,
+        "option_target_pixels": 1021
+      }
+    },
+    {
+      "question": 1,
+      "label": "C",
+      "role": "modified_reference",
+      "role_zh": "适度修改混淆项",
+      "endpoint_local_xyyaw": [
+        1.122456,
+        0.038003,
+        0.000217
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 2329,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.2340394890666092e-07,
+      "numeric_difference": {
+        "delta_forward_m": -0.28061400000000014,
+        "delta_left_m": -0.009500999999999996,
+        "delta_yaw_deg": 0.0,
+        "path_length_difference_m": -0.2807786294799528,
+        "endpoint_direction_cosine": 0.9999999999999842,
+        "static_background_RGB_MAE_255": 29.18710988967882,
+        "target_centroid_delta_px": [
+          -0.4799055388578779,
+          1.126239486777962
+        ],
+        "reference_target_pixels": 2890,
+        "option_target_pixels": 2329
+      }
+    },
+    {
+      "question": 1,
+      "label": "D",
+      "role": "wrong_direction",
+      "role_zh": "方向错误项：朝左移并左转",
+      "endpoint_local_xyyaw": [
+        1.40307,
+        0.297504,
+        0.800217
+      ],
+      "visible_steps": 7,
+      "end_target_pixels": 0,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.0957612397776266e-07,
+      "numeric_difference": {
+        "delta_forward_m": 0.0,
+        "delta_left_m": 0.25,
+        "delta_yaw_deg": 45.83662361046585,
+        "path_length_difference_m": 0.031079442972511195,
+        "endpoint_direction_cosine": 0.9847093062800139,
+        "static_background_RGB_MAE_255": 60.84247563973087,
+        "target_centroid_delta_px": null,
+        "reference_target_pixels": 2890,
+        "option_target_pixels": 0
+      }
+    },
+    {
+      "question": 2,
+      "label": "A",
+      "role": "obvious_wrong",
+      "role_zh": "明显错误项：反向后退",
+      "endpoint_local_xyyaw": [
+        -0.45,
+        0.0,
+        0.0
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 945,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.1363059344240958e-07,
+      "numeric_difference": {
+        "delta_forward_m": -1.786422,
+        "delta_left_m": -0.059652,
+        "delta_yaw_deg": -0.002578310078092873,
+        "path_length_difference_m": -0.8877716441408723,
+        "endpoint_direction_cosine": -0.9990053175939637,
+        "static_background_RGB_MAE_255": 46.52812217577949,
+        "target_centroid_delta_px": [
+          -23.981951368966378,
+          9.009336679798764
+        ],
+        "reference_target_pixels": 5129,
+        "option_target_pixels": 945
+      }
+    },
+    {
+      "question": 2,
+      "label": "B",
+      "role": "source_reference",
+      "role_zh": "正确项：源参考轨迹",
+      "endpoint_local_xyyaw": [
+        1.336422,
+        0.059652,
+        4.5e-05
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 5129,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 0.0,
+      "numeric_difference": {
+        "delta_forward_m": 0.0,
+        "delta_left_m": 0.0,
+        "delta_yaw_deg": 0.0,
+        "path_length_difference_m": 0.0,
+        "endpoint_direction_cosine": 1.0,
+        "static_background_RGB_MAE_255": 0.0,
+        "target_centroid_delta_px": [
+          0.0,
+          0.0
+        ],
+        "reference_target_pixels": 5129,
+        "option_target_pixels": 5129
+      }
+    },
+    {
+      "question": 2,
+      "label": "C",
+      "role": "modified_reference",
+      "role_zh": "适度修改混淆项",
+      "endpoint_local_xyyaw": [
+        1.069138,
+        0.047722,
+        4.5e-05
+      ],
+      "visible_steps": 8,
+      "end_target_pixels": 3620,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.1380983400558455e-07,
+      "numeric_difference": {
+        "delta_forward_m": -0.2672840000000001,
+        "delta_left_m": -0.011929999999999996,
+        "delta_yaw_deg": 0.0,
+        "path_length_difference_m": -0.2675539121924735,
+        "endpoint_direction_cosine": 0.9999999999999364,
+        "static_background_RGB_MAE_255": 15.05210869089703,
+        "target_centroid_delta_px": [
+          -6.859496751760389,
+          1.910229719642075
+        ],
+        "reference_target_pixels": 5129,
+        "option_target_pixels": 3620
+      }
+    },
+    {
+      "question": 2,
+      "label": "D",
+      "role": "wrong_direction",
+      "role_zh": "方向错误项：朝左移并左转",
+      "endpoint_local_xyyaw": [
+        1.336422,
+        0.309652,
+        0.800045
+      ],
+      "visible_steps": 6,
+      "end_target_pixels": 0,
+      "blocked_steps": 0,
+      "saturated_steps": 0,
+      "full_eight_waypoints_executed": true,
+      "max_waypoint_error_m": 1.2310424435873224e-07,
+      "numeric_difference": {
+        "delta_forward_m": 0.0,
+        "delta_left_m": 0.25,
+        "delta_yaw_deg": 45.83662361046585,
+        "path_length_difference_m": 0.03594157982481838,
+        "endpoint_direction_cosine": 0.9832878839954149,
+        "static_background_RGB_MAE_255": 50.30836500921587,
+        "target_centroid_delta_px": null,
+        "reference_target_pixels": 5129,
+        "option_target_pixels": 0
+      }
+    }
+  ],
+  "role_provenance": "user-directed hand-designed contrast roles; amplitudes manual, no model outcome selection",
+  "correctness_scope": "source-observation correspondence; no unique optimal tracking or irrecoverable failure claim",
+  "model_calls": 0
+}

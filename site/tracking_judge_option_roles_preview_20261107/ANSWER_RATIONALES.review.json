@@ -1,0 +1,221 @@
+{
+  "model_input": false,
+  "answers_and_explanations": [
+    {
+      "case_id": "TV5P-DT-03",
+      "source_event": "MD2-DT-01",
+      "source_mode": "recorded_cpm_command_replay",
+      "correct_choices": [
+        "A",
+        "B"
+      ],
+      "questions": [
+        {
+          "question": 1,
+          "correct_label": "A",
+          "observed_transition": "S0->S1",
+          "options": [
+            {
+              "label": "A",
+              "is_source_reference": true,
+              "similar_trend_zh": "该项就是实际生成下一张参考画面的执行轨迹。",
+              "distinction_zh": "完整8个截止点经原生控制器执行，末帧与给定S1的原始RGB逐字节一致；轨迹长1.404m，末端位移[x,y]=[1.403,0.048]m，末端yaw=+0.01°。这是仿真来源对应答案；三张观察本身不保证所有未给定中间路线唯一。",
+              "executed_visual_evidence_zh": "选择该项。请结合静态场景对齐和目标身份／可见性变化判断，不能只凭目标在屏幕上的移动方向。",
+              "numeric_difference": {
+                "delta_forward_m": 0.0,
+                "delta_left_m": 0.0,
+                "delta_yaw_deg": 0.0,
+                "path_length_difference_m": 0.0,
+                "endpoint_direction_cosine": 1.0000000000000002,
+                "static_background_RGB_MAE_255": 0.0,
+                "target_centroid_delta_px": [
+                  0.0,
+                  0.0
+                ],
+                "reference_target_pixels": 2890,
+                "option_target_pixels": 2890
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "正确项：源参考轨迹"
+            },
+            {
+              "label": "B",
+              "is_source_reference": false,
+              "similar_trend_zh": "人物沿同一源事件继续运动，机器人路径可以完整执行；人物仍可见也不意味着该项符合题目展示的运动。",
+              "distinction_zh": "机器人后退0.300米，与给定参考画面中的前进相反。它是运动方向明显不符，不是因为撞墙被判错；也不据此宣称后退永远是不合理的跟踪策略。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为61.72/255。目标可见像素质心相对参考偏移(dx,dy)=(-1.7,+4.3)像素；图像坐标+x向右、+y向下。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": -1.70307,
+                "delta_left_m": -0.047504,
+                "delta_yaw_deg": -0.012433184154346527,
+                "path_length_difference_m": -1.1038931149938673,
+                "endpoint_direction_cosine": -0.9994273378142392,
+                "static_background_RGB_MAE_255": 61.72370329880691,
+                "target_centroid_delta_px": [
+                  -1.6809414069251716,
+                  4.294245074880791
+                ],
+                "reference_target_pixels": 2890,
+                "option_target_pixels": 1021
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "明显错误项：反向后退"
+            },
+            {
+              "label": "C",
+              "is_source_reference": false,
+              "similar_trend_zh": "保留正确项的前进方向、路线形状和朝向，只缩短一部分行进距离，作为唯一的近似混淆项。",
+              "distinction_zh": "与正确项相比少前进0.281米；应比较人物尺度、门框和墙面的相对视差。不能只凭同向前进就选它。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为29.19/255。目标可见像素质心相对参考偏移(dx,dy)=(-0.5,+1.1)像素；图像坐标+x向右、+y向下。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": -0.28061400000000014,
+                "delta_left_m": -0.009500999999999996,
+                "delta_yaw_deg": 0.0,
+                "path_length_difference_m": -0.2807786294799528,
+                "endpoint_direction_cosine": 0.9999999999999842,
+                "static_background_RGB_MAE_255": 29.18710988967882,
+                "target_centroid_delta_px": [
+                  -0.4799055388578779,
+                  1.126239486777962
+                ],
+                "reference_target_pixels": 2890,
+                "option_target_pixels": 2329
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "适度修改混淆项"
+            },
+            {
+              "label": "D",
+              "is_source_reference": false,
+              "similar_trend_zh": "仍保留源轨迹的大致前进量，但横向移动及相机朝向转向左侧，模拟方向判断错误。",
+              "distinction_zh": "相对正确项额外左移0.250米、左转45.8°。该方向使门框与人物的屏幕位置明显不符；路径仍经原生控制器完整执行。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为60.84/255。参考末帧目标可见像素2890，该项为0，遮挡结果不同。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": 0.0,
+                "delta_left_m": 0.25,
+                "delta_yaw_deg": 45.83662361046585,
+                "path_length_difference_m": 0.031079442972511195,
+                "endpoint_direction_cosine": 0.9847093062800139,
+                "static_background_RGB_MAE_255": 60.84247563973087,
+                "target_centroid_delta_px": null,
+                "reference_target_pixels": 2890,
+                "option_target_pixels": 0
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "方向错误项：朝左移并左转"
+            }
+          ]
+        },
+        {
+          "question": 2,
+          "correct_label": "B",
+          "observed_transition": "S1->S2",
+          "options": [
+            {
+              "label": "A",
+              "is_source_reference": false,
+              "similar_trend_zh": "人物沿同一源事件继续运动，机器人路径可以完整执行；人物仍可见也不意味着该项符合题目展示的运动。",
+              "distinction_zh": "机器人后退0.450米，与给定参考画面中的前进相反。它是运动方向明显不符，不是因为撞墙被判错；也不据此宣称后退永远是不合理的跟踪策略。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为46.53/255。目标可见像素质心相对参考偏移(dx,dy)=(-24.0,+9.0)像素；图像坐标+x向右、+y向下。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": -1.786422,
+                "delta_left_m": -0.059652,
+                "delta_yaw_deg": -0.002578310078092873,
+                "path_length_difference_m": -0.8877716441408723,
+                "endpoint_direction_cosine": -0.9990053175939637,
+                "static_background_RGB_MAE_255": 46.52812217577949,
+                "target_centroid_delta_px": [
+                  -23.981951368966378,
+                  9.009336679798764
+                ],
+                "reference_target_pixels": 5129,
+                "option_target_pixels": 945
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "明显错误项：反向后退"
+            },
+            {
+              "label": "B",
+              "is_source_reference": true,
+              "similar_trend_zh": "该项就是实际生成下一张参考画面的执行轨迹。",
+              "distinction_zh": "完整8个截止点经原生控制器执行，末帧与给定S2的原始RGB逐字节一致；轨迹长1.338m，末端位移[x,y]=[1.336,0.060]m，末端yaw=+0.00°。这是仿真来源对应答案；三张观察本身不保证所有未给定中间路线唯一。",
+              "executed_visual_evidence_zh": "选择该项。请结合静态场景对齐和目标身份／可见性变化判断，不能只凭目标在屏幕上的移动方向。",
+              "numeric_difference": {
+                "delta_forward_m": 0.0,
+                "delta_left_m": 0.0,
+                "delta_yaw_deg": 0.0,
+                "path_length_difference_m": 0.0,
+                "endpoint_direction_cosine": 1.0,
+                "static_background_RGB_MAE_255": 0.0,
+                "target_centroid_delta_px": [
+                  0.0,
+                  0.0
+                ],
+                "reference_target_pixels": 5129,
+                "option_target_pixels": 5129
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "正确项：源参考轨迹"
+            },
+            {
+              "label": "C",
+              "is_source_reference": false,
+              "similar_trend_zh": "保留正确项的前进方向、路线形状和朝向，只缩短一部分行进距离，作为唯一的近似混淆项。",
+              "distinction_zh": "与正确项相比少前进0.267米；应比较人物尺度、门框和墙面的相对视差。不能只凭同向前进就选它。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为15.05/255。目标可见像素质心相对参考偏移(dx,dy)=(-6.9,+1.9)像素；图像坐标+x向右、+y向下。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": -0.2672840000000001,
+                "delta_left_m": -0.011929999999999996,
+                "delta_yaw_deg": 0.0,
+                "path_length_difference_m": -0.2675539121924735,
+                "endpoint_direction_cosine": 0.9999999999999364,
+                "static_background_RGB_MAE_255": 15.05210869089703,
+                "target_centroid_delta_px": [
+                  -6.859496751760389,
+                  1.910229719642075
+                ],
+                "reference_target_pixels": 5129,
+                "option_target_pixels": 3620
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "适度修改混淆项"
+            },
+            {
+              "label": "D",
+              "is_source_reference": false,
+              "similar_trend_zh": "仍保留源轨迹的大致前进量，但横向移动及相机朝向转向左侧，模拟方向判断错误。",
+              "distinction_zh": "相对正确项额外左移0.250米、左转45.8°。该方向使门框与人物的屏幕位置明显不符；路径仍经原生控制器完整执行。",
+              "executed_visual_evidence_zh": "该项在同一人物运动、同一时刻完整执行后，静态背景区域RGB MAE为50.31/255。参考末帧目标可见像素5129，该项为0，遮挡结果不同。因此不选。像素差和姿态差是审查证据，不单独证明人或模型一定能辨别。",
+              "numeric_difference": {
+                "delta_forward_m": 0.0,
+                "delta_left_m": 0.25,
+                "delta_yaw_deg": 45.83662361046585,
+                "path_length_difference_m": 0.03594157982481838,
+                "endpoint_direction_cosine": 0.9832878839954149,
+                "static_background_RGB_MAE_255": 50.30836500921587,
+                "target_centroid_delta_px": null,
+                "reference_target_pixels": 5129,
+                "option_target_pixels": 0
+              },
+              "provenance": "native simulator trajectory + rendered endpoint measurements; explanatory prose is adapted/manual",
+              "independent_human_identifiability_verified": false,
+              "role_review": "方向错误项：朝左移并左转"
+            }
+          ]
+        }
+      ],
+      "visual_cues_review": {
+        "cue_zh": "同一右侧门洞事件，人物运动保持一致。混淆项缩短前进距离，明显错误项后退，方向错误项在前进时朝左转；比较门框、人物尺度和相机视野。是否能补救尚未测量，不能从来源标签推断跟踪最优性。",
+        "status": "native reference views preserved from V4; new endpoints require visual inspection"
+      }
+    }
+  ],
+  "independent_human_ambiguity_review_pending": true
+}

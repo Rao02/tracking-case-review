@@ -21,6 +21,9 @@ def main():
     # Keep the former summary-only URL as a redirect to the complete review.
     partial=Path('tracking_judge_state_partial_v2_20261107/review.html')
     if (ROOT/partial).is_file(): pending.append(partial)
+    # User-requested isolated one-case option-role preview; main cohort stays frozen.
+    role_preview=Path('tracking_judge_option_roles_preview_20261107/review.html')
+    if (ROOT/role_preview).is_file(): pending.append(role_preview)
     while pending:
         rel=pending.pop()
         if rel in content: continue
