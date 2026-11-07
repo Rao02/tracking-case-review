@@ -1,0 +1,41 @@
+{
+  "release": "three_observed_views_two_path_subquestions_v4",
+  "case_ids": [
+    "TV4R-AT-01",
+    "TV3A-AT-02",
+    "TV3A-AT-03",
+    "TV3A-DT-04",
+    "TV3A-DT-06",
+    "TV3B-DT-04",
+    "TV3B-AT-01",
+    "TV3B-AT-02",
+    "TV3B-AT-03",
+    "TV4C-AT-01",
+    "TV4C-AT-02",
+    "TV4C-DT-03",
+    "TV4C-DT-04",
+    "TV4C-STT-05",
+    "TV4C-STT-06"
+  ],
+  "cases": 15,
+  "subquestions": 30,
+  "candidate_paths": 120,
+  "episode_families": 14,
+  "scenes": 13,
+  "replaced_case": {
+    "old": "TV3A-AT-01",
+    "new": "TV4R-AT-01"
+  },
+  "new_success_CPM_episodes": 6,
+  "new_tasks": {
+    "AT": 2,
+    "DT": 2,
+    "STT": 2
+  },
+  "unchanged_cases": 8,
+  "unchanged_questions": 16,
+  "new_questions": 14,
+  "model_API_calls": 0,
+  "human_ambiguity_review_pending": true,
+  "public_url": "https://rao02.github.io/tracking-case-review/tracking_judge_three_view_v4_20261107/review.html"
+}

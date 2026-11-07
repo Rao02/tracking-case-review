@@ -1,0 +1,33 @@
+{
+  "old_case": "TV3A-AT-01",
+  "problem": "Distinct image bytes but near-static robot/target S1-S2; missing reference-motion gate in prior release",
+  "old_robot_S1_S2_displacement_m": 0.043375458,
+  "old_target_S1_S2_displacement_m": 0.052538,
+  "old_robot_S1_S2_yaw_rad": 0,
+  "replacement_case": "TV4R-AT-01",
+  "new_reference_transitions": [
+    {
+      "robot_displacement_m": 1.5460578521337154,
+      "robot_yaw_change_rad": 0.06290442699930132,
+      "RGB_MAE_255": 41.168753164785876,
+      "passed": true
+    },
+    {
+      "robot_displacement_m": 0.7904488420704738,
+      "robot_yaw_change_rad": 2.3249492033805552e-06,
+      "RGB_MAE_255": 38.77498824508102,
+      "passed": true
+    }
+  ],
+  "old_review_archive": "../tracking_judge_three_view_v3_20261107/historical_review_before_v4.html",
+  "old_questions_sha256": "9949157bd9285324ab3c5a7b8cc7249b494c1b508dc2cb076180d4474756beb2",
+  "old_gold_sha256": "13d30f6da90febc50c474bd0da4baca39261faf7aca0fe146cbbaffe138f7adf",
+  "new_question_ids_do_not_inherit_old_answers": true,
+  "new_CPM_sources": 6,
+  "existing_unchanged_cases": 8,
+  "unchanged_questions": 16,
+  "new_English_questions": 14,
+  "review_cases": 15,
+  "new_API_calls": 0,
+  "human_ambiguity_review_pending": true
+}
