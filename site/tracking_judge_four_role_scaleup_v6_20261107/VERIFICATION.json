@@ -1,0 +1,6092 @@
+{
+  "passed": true,
+  "cases": 63,
+  "subquestions": 126,
+  "published_option_appearances": 504,
+  "published_waypoint_appearances": 4032,
+  "candidate_pairs": 756,
+  "per_option_explanations": 504,
+  "reference_transition_checks": 126,
+  "weak_TV3A_AT_01_removed": true,
+  "fixed_views_per_case": 3,
+  "choice_dependent_views": false,
+  "source_reference_derived_labels": true,
+  "all_candidates_zero_navmesh_blocked_steps": true,
+  "all_candidates_zero_target_too_close_steps": true,
+  "max_published_waypoint_error_m": 9.633134250742035e-07,
+  "model_API_calls": 0,
+  "max_published_heading_error_rad": 1.2138851164245068e-06,
+  "scope": "adapted observed visual-action correspondence development release; no official SR/TR/CR; independent human ambiguity review pending",
+  "manual_development_gates": {
+    "max_WP_error_m": 0.025,
+    "min_pair_max_position_m_or_yaw_rad": [
+      0.08,
+      0.12
+    ],
+    "min_pair_endpoint_RGB_MAE_255": 4.0,
+    "person_fraction_limit": 0.15,
+    "terminal_target_min_pixels": 500
+  },
+  "cases_detail": [
+    {
+      "case_id": "TV6-AT-01-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.9661186471427824,
+          "max_yaw_rad": 0.06290299999999993,
+          "endpoint_RGB_MAE_255": 28.48892777054398
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.1249950183445259,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 32.8065502025463
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.434194626681121,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 36.636027018229164
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.3932296660077261,
+          "max_yaw_rad": 0.06290299999999993,
+          "endpoint_RGB_MAE_255": 37.2884521484375
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.702437391377727,
+          "max_yaw_rad": 0.06290299999999993,
+          "endpoint_RGB_MAE_255": 41.2259521484375
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.30921197965311753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.18426287615741
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.27281500000000003,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 29.707743326822918
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.528896,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 32.85488326461227
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.15808999999999995,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.60113525390625
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.372953,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 24.37698929398148
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.430905,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 35.397216796875
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.686986,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 33.95071976273148
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03982204861111111,
+      "target_pixels": [
+        5872,
+        5802,
+        2332
+      ]
+    },
+    {
+      "case_id": "TV6-AT-01-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.434194626681121,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 36.636027018229164
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.123151722297571,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 35.2420337818287
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.1249950183445259,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 32.8065502025463
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.32996370764221933,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.225233289930557
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.30921197965311753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.18426287615741
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.1,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.62604437934028
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.44730204451243005,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 32.594211154513886
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.19847530853987855,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.35624412254051
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.08648003472222
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.27281500000000003,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 29.707743326822918
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.430905,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 35.397216796875
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.15808999999999995,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.60113525390625
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03982204861111111,
+      "target_pixels": [
+        5872,
+        5802,
+        2332
+      ]
+    },
+    {
+      "case_id": "TV6-AT-01-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.30921197965311753,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 37.52289948640046
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.30921197965311753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.18426287615741
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.32996370764221933,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.225233289930557
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.33585159866898
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.1,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.90806749131944
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.1,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.62604437934028
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.424440737123845
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 25.34079544632523
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.15808999999999995,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 31.44839138454861
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.08648003472222
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.15808999999999995,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.60113525390625
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.19847530853987855,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.35624412254051
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03982204861111111,
+      "target_pixels": [
+        5872,
+        5802,
+        2332
+      ]
+    },
+    {
+      "case_id": "TV6-AT-22-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.4255835598887217,
+          "max_yaw_rad": 0.6433340000000003,
+          "endpoint_RGB_MAE_255": 37.424795645254626
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2961546966586888,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.300349482783563
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.7103977471062106,
+          "max_yaw_rad": 0.6433360000000001,
+          "endpoint_RGB_MAE_255": 36.17058648003472
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.1303202768083036,
+          "max_yaw_rad": 0.6433340000000003,
+          "endpoint_RGB_MAE_255": 36.391915780526624
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.9639761346968088,
+          "max_yaw_rad": 0.31400400000000017,
+          "endpoint_RGB_MAE_255": 23.231187608506943
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.414263968969372,
+          "max_yaw_rad": 0.6433360000000001,
+          "endpoint_RGB_MAE_255": 34.42525001808449
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.8723343211085989,
+          "max_yaw_rad": 0.42748799999999987,
+          "endpoint_RGB_MAE_255": 27.29231318721065
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.7764747188473042,
+          "max_yaw_rad": 0.1134940000000002,
+          "endpoint_RGB_MAE_255": 28.677668818721063
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.0702976963406023,
+          "max_yaw_rad": 0.1134940000000002,
+          "endpoint_RGB_MAE_255": 31.64446795428241
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.20234395427099,
+          "max_yaw_rad": 0.42748799999999987,
+          "endpoint_RGB_MAE_255": 33.47320104528357
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.4998768159955669,
+          "max_yaw_rad": 0.42748799999999987,
+          "endpoint_RGB_MAE_255": 35.94977936921296
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.2982128175732893,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.234029134114582
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.057061089409722224,
+      "target_pixels": [
+        8414,
+        7672,
+        6070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-22-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.09999999999999998,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 10.495275426793981
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.3369587576440179,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.768037018952548
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.0992979251158441,
+          "max_yaw_rad": 0.6433340000000003,
+          "endpoint_RGB_MAE_255": 35.76976408781829
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2961546966586888,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.300349482783563
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.1303202768083036,
+          "max_yaw_rad": 0.6433340000000003,
+          "endpoint_RGB_MAE_255": 36.391915780526624
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.4255835598887217,
+          "max_yaw_rad": 0.6433340000000003,
+          "endpoint_RGB_MAE_255": 37.424795645254626
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.7764747188473042,
+          "max_yaw_rad": 0.1134940000000002,
+          "endpoint_RGB_MAE_255": 28.677668818721063
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.7262995174230809,
+          "max_yaw_rad": 0.1134940000000002,
+          "endpoint_RGB_MAE_255": 27.02557146990741
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.0702976963406023,
+          "max_yaw_rad": 0.1134940000000002,
+          "endpoint_RGB_MAE_255": 31.64446795428241
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.495756926359954
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.2982128175732893,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.234029134114582
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3528980654027448,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.646208586516202
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.057061089409722224,
+      "target_pixels": [
+        8414,
+        7672,
+        6070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-22-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.3369587576440179,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.768037018952548
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2961546966586888,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.300349482783563
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.5670801420302072,
+          "max_yaw_rad": 0.23550100000000018,
+          "endpoint_RGB_MAE_255": 21.63010208695023
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.09999999999999998,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 10.495275426793981
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.2930400020202019,
+          "max_yaw_rad": 0.23550100000000018,
+          "endpoint_RGB_MAE_255": 21.491929796006943
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3173197790998852,
+          "max_yaw_rad": 0.23550100000000018,
+          "endpoint_RGB_MAE_255": 23.118946216724538
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3528980654027448,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.646208586516202
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.2982128175732893,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.234029134114582
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3778964998051715,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 31.10091597945602
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.495756926359954
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.040461000000000025,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.02899848090278
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.16000000000000003,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.868098506221063
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.057061089409722224,
+      "target_pixels": [
+        8414,
+        7672,
+        6070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-03-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 28.880126953125
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 2.155524,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 20.36317726417824
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 26.545387550636573
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 2.155524,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.88263165509259
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.086877893518519
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.814419,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.442088939525462
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 1.408351,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 16.883811668113427
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 21.525813349971063
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 20.311509874131943
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.408351,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.80269142433449
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.216681,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.206886574074074
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 9.29410129123264
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047186957465277776,
+      "target_pixels": [
+        6918,
+        6958,
+        806
+      ]
+    },
+    {
+      "case_id": "TV6-AT-03-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 28.880126953125
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.61395489728009
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.086877893518519
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 28.78470413773148
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 26.545387550636573
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.4170762772263606,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.34988064236111
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 9.29410129123264
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 20.311509874131943
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.30714392212772174,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.464002821180557
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 21.525813349971063
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.03692626953125
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 26.179054542824073
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047186957465277776,
+      "target_pixels": [
+        6918,
+        6958,
+        806
+      ]
+    },
+    {
+      "case_id": "TV6-AT-03-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 24.828990794994212
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.086877893518519
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.61395489728009
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.341105,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 24.28891556351273
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 16.41022632740162
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.4170762772263606,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.34988064236111
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.30714392212772174,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.464002821180557
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 25.78476517288773
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.03692626953125
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 18.25829852068866
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.19167,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 9.29410129123264
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 19.09063946759259
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047186957465277776,
+      "target_pixels": [
+        6918,
+        6958,
+        806
+      ]
+    },
+    {
+      "case_id": "TV6-DT-04-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.9408779919678103,
+          "max_yaw_rad": 0.7538049999999998,
+          "endpoint_RGB_MAE_255": 40.262349446614586
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.3907635154412449,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 70.92592592592592
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 60.84959129050926
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 2.2239799876898623,
+          "max_yaw_rad": 0.046196000000000126,
+          "endpoint_RGB_MAE_255": 63.72069634331597
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.9283084244241115,
+          "max_yaw_rad": 0.046196000000000126,
+          "endpoint_RGB_MAE_255": 51.36105459707755
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.2956740181348372,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.978276005497687
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.15814099999999998,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.798064055266202
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 44.622348361545136
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.240704000000403,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 41.35167326750579
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.29581848468444294,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 46.882778591579864
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.0825630000004618,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 40.51982286241319
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 1.2656405159511133,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 31.150169089988427
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047648111979166664,
+      "target_pixels": [
+        7026,
+        6885,
+        1106
+      ]
+    },
+    {
+      "case_id": "TV6-DT-04-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 60.84959129050926
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.24000000000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 40.168703432436345
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.2956740181348372,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.978276005497687
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.03405699999999999,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 63.252113624855326
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.3907635154412449,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 70.92592592592592
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3842983281254292,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 35.329257541232636
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.15814099999999998,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.798064055266202
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 44.622348361545136
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.615021882233798
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.29581848468444294,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 46.882778591579864
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.2874170765299097,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.26387984664352
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.034057000000000004,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 34.42690927010995
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047648111979166664,
+      "target_pixels": [
+        7026,
+        6885,
+        1106
+      ]
+    },
+    {
+      "case_id": "TV6-DT-04-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.24000000000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 40.168703432436345
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2956740181348372,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.978276005497687
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.16,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 47.35296630859375
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.3842983281254292,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 35.329257541232636
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.08000000000000002,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 35.64971245659722
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.33881830676632574,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 49.39440239800347
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.16,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 41.221889919704864
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.15814099999999998,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.798064055266202
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.24,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.615021882233798
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.22496349899705953,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 42.29252794053819
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.07999999999999999,
+          "max_yaw_rad": 0.2400000000000002,
+          "endpoint_RGB_MAE_255": 30.536365650318288
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.2874170765299097,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.26387984664352
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.047648111979166664,
+      "target_pixels": [
+        7026,
+        6885,
+        1106
+      ]
+    },
+    {
+      "case_id": "TV6-DT-05-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.9106078665929699,
+          "max_yaw_rad": 0.21161999999999992,
+          "endpoint_RGB_MAE_255": 47.27456552010995
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.026266175212357,
+          "max_yaw_rad": 1.0116199999999997,
+          "endpoint_RGB_MAE_255": 62.25348352502893
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.026266175212357,
+          "max_yaw_rad": 0.21161999999999992,
+          "endpoint_RGB_MAE_255": 52.39853470413773
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 64.50248661747685
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.148957429108798
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 60.87090386284722
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.607458043981481
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.834681697801623,
+          "max_yaw_rad": 0.256586,
+          "endpoint_RGB_MAE_255": 56.237937644675924
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 56.138346354166664
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.9311299193157742,
+          "max_yaw_rad": 0.256586,
+          "endpoint_RGB_MAE_255": 59.795993381076386
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 58.688571506076386
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.9311299193157742,
+          "max_yaw_rad": 1.0565860000000002,
+          "endpoint_RGB_MAE_255": 53.22459581163194
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09617784288194445,
+      "target_pixels": [
+        14182,
+        10392,
+        1354
+      ]
+    },
+    {
+      "case_id": "TV6-DT-05-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 64.50248661747685
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 59.05711534288194
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 60.87090386284722
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.18106124875853472,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.75273075810185
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.148957429108798
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.472828052662038
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 62.25139702690972
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 58.688571506076386
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 56.138346354166664
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.70488823784722
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.14294205528115228,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.05337185329861
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.607458043981481
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09617784288194445,
+      "target_pixels": [
+        14182,
+        10392,
+        1354
+      ]
+    },
+    {
+      "case_id": "TV6-DT-05-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.188266330295136
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.472828052662038
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.148957429108798
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.88651756004051
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.11605057432860896,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 31.7584386754919
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.18106124875853472,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.75273075810185
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.607458043981481
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.70488823784722
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 27.265514232494212
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.14294205528115228,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.05337185329861
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.09670631400275782,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.759532787181712
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.38300012659143
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09617784288194445,
+      "target_pixels": [
+        14182,
+        10392,
+        1354
+      ]
+    },
+    {
+      "case_id": "TV6-DT-06-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.3185220000015697,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.45465766059028
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.5477750000009127,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 27.700672290943288
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.13720600000000005,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.94859031394676
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.49327699999999997,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 25.422351978443288
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.4557280000010972,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 32.09308539496528
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.68498100000073,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 32.49932409215857
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.329118852993869,
+          "max_yaw_rad": 0.06350100000000003,
+          "endpoint_RGB_MAE_255": 20.40822120949074
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.6253815008968526,
+          "max_yaw_rad": 0.06350100000000003,
+          "endpoint_RGB_MAE_255": 28.30377197265625
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.900212,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 32.84858308015046
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.29628955597523193,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.442805537471063
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.8884443181831937,
+          "max_yaw_rad": 0.06350200000000017,
+          "endpoint_RGB_MAE_255": 36.870858651620374
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 1.1847332421249943,
+          "max_yaw_rad": 0.06350200000000017,
+          "endpoint_RGB_MAE_255": 35.48920129846643
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.05510118272569445,
+      "target_pixels": [
+        6079,
+        6109,
+        3583
+      ]
+    },
+    {
+      "case_id": "TV6-DT-06-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.18227859566059865,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.129215946903937
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.3185220000015697,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.45465766059028
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.13720600000000005,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.94859031394676
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.47126189108074507,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 37.52617956090857
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.04277208116319
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.4557280000010972,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 32.09308539496528
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.44443433396284765,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.205946180555557
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.329118852993869,
+          "max_yaw_rad": 0.06350100000000003,
+          "endpoint_RGB_MAE_255": 20.40822120949074
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.29628955597523193,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.442805537471063
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.7735205546932802,
+          "max_yaw_rad": 0.06350100000000003,
+          "endpoint_RGB_MAE_255": 29.20654296875
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.14814477798761574,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.551570185908563
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.6253815008968526,
+          "max_yaw_rad": 0.06350100000000003,
+          "endpoint_RGB_MAE_255": 28.30377197265625
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.05510118272569445,
+      "target_pixels": [
+        6079,
+        6109,
+        3583
+      ]
+    },
+    {
+      "case_id": "TV6-DT-06-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.04277208116319
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.70108597366898
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.18227859566059865,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.129215946903937
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.776138870804395
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.13720600000000005,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.94859031394676
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.13720600000000005,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.43183729383681
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.14814477798761574,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.09531882957176
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.14814477798761574,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.551570185908563
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.44443433396284765,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.205946180555557
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 29.82409441912616
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.29628955597523193,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.99835883246528
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.29628955597523193,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.442805537471063
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.05510118272569445,
+      "target_pixels": [
+        6079,
+        6109,
+        3583
+      ]
+    },
+    {
+      "case_id": "TV6-AT-07-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.1046508278763927,
+          "max_yaw_rad": 0.6956280000000001,
+          "endpoint_RGB_MAE_255": 26.42974175347222
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 30.698890968605323
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 29.122868290653937
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.325598522167628,
+          "max_yaw_rad": 0.04562799999999978,
+          "endpoint_RGB_MAE_255": 33.937674063223376
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.1046508278763927,
+          "max_yaw_rad": 0.04562799999999978,
+          "endpoint_RGB_MAE_255": 31.08796974464699
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.751582392939815
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.48,
+          "endpoint_RGB_MAE_255": 93.85592764395254
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.24054762692240397,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.81793212890625
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.0883093366120682,
+          "max_yaw_rad": 0.7850000000000001,
+          "endpoint_RGB_MAE_255": 67.61620867693865
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.40676978847746303,
+          "max_yaw_rad": 0.48,
+          "endpoint_RGB_MAE_255": 94.38282154224537
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.0106553379649266,
+          "max_yaw_rad": 0.30500000000000016,
+          "endpoint_RGB_MAE_255": 53.37545211226852
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 1.328675570876879,
+          "max_yaw_rad": 0.7850000000000001,
+          "endpoint_RGB_MAE_255": 68.70148835358796
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07044813368055555,
+      "target_pixels": [
+        5638,
+        1014,
+        10388
+      ]
+    },
+    {
+      "case_id": "TV6-AT-07-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.08,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 30.078531901041668
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.23735222808518147,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.47486029730903
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.08,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 12.83659984447338
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 30.698890968605323
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 29.122868290653937
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.751582392939815
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.48,
+          "endpoint_RGB_MAE_255": 93.85592764395254
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.40676978847746303,
+          "max_yaw_rad": 0.48,
+          "endpoint_RGB_MAE_255": 94.38282154224537
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.13,
+          "max_yaw_rad": 0.48,
+          "endpoint_RGB_MAE_255": 96.6553163881655
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.24054762692240397,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.81793212890625
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.415382667824073
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3064481046082681,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.31723587601273
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07044813368055555,
+      "target_pixels": [
+        5638,
+        1014,
+        10388
+      ]
+    },
+    {
+      "case_id": "TV6-AT-07-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.23735222808518147,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.47486029730903
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.783732096354168
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.22094940637394797,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.751582392939815
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.08,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.054933901186345
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.08,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 12.83659984447338
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.01522262008102
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 33.487252694589124
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.24054762692240397,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 25.790577076099538
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.9701085973669
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.24054762692240397,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.81793212890625
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.415382667824073
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3064481046082681,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.31723587601273
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07044813368055555,
+      "target_pixels": [
+        5638,
+        1014,
+        10388
+      ]
+    },
+    {
+      "case_id": "TV6-AT-08-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.5305790000009423,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 13.971220793547454
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.7866610000025425,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.76322880497685
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.5720530000034961,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 25.69824896918403
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.6610970000007563,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.280732331452548
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.4464890000011198,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 24.440086082175927
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.21460800000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.84780318648727
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.33734200000000003,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 33.142636899594905
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.09084300000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.928907606336807
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.454214,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 35.28988082320602
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.246499,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.46821876808449
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.454214,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 19.326619466145832
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.363371,
+          "max_yaw_rad": 1.9999999998354667e-06,
+          "endpoint_RGB_MAE_255": 33.088467068142364
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04142930772569445,
+      "target_pixels": [
+        5842,
+        6109,
+        2062
+      ]
+    },
+    {
+      "case_id": "TV6-AT-08-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.761180736400462
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.21460800000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.84780318648727
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.6610970000007563,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.280732331452548
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2458792257674487,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.364811650028937
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.6718995486008308,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 29.522684733072918
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.4464890000011198,
+          "max_yaw_rad": 1.000000000139778e-06,
+          "endpoint_RGB_MAE_255": 24.440086082175927
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.35804975207923273,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.43936496310764
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.33734200000000003,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 33.142636899594905
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.246499,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.46821876808449
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.057203504774307
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.1505073109486712,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.194444444444443
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.09084300000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.928907606336807
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04142930772569445,
+      "target_pixels": [
+        5842,
+        6109,
+        2062
+      ]
+    },
+    {
+      "case_id": "TV6-AT-08-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.21460800000000002,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 31.25046115451389
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.21460800000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.84780318648727
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.2458792257674487,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.364811650028937
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.07570845992477
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.097739890769677
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.761180736400462
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.158230251736114
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.21260353370949
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.09084300000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.08193856698495
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.057203504774307
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.09084300000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.928907606336807
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.1505073109486712,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.194444444444443
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04142930772569445,
+      "target_pixels": [
+        5842,
+        6109,
+        2062
+      ]
+    },
+    {
+      "case_id": "TV6-AT-09-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.077279291378053,
+          "max_yaw_rad": 0.0416430000000001,
+          "endpoint_RGB_MAE_255": 37.21836570457176
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.22661387221659676,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.3993982385706
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 48.875687210648145
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.3038930443717383,
+          "max_yaw_rad": 0.0416430000000001,
+          "endpoint_RGB_MAE_255": 40.221763328269674
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.1003084438610837,
+          "max_yaw_rad": 0.6083569999999998,
+          "endpoint_RGB_MAE_255": 48.785115559895836
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3410635528475595,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.509297688802086
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.8226221491796826,
+          "max_yaw_rad": 0.2919999999999998,
+          "endpoint_RGB_MAE_255": 49.01963523582176
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.0038305563136638,
+          "max_yaw_rad": 0.9420000000000002,
+          "endpoint_RGB_MAE_255": 57.12861463758681
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.2385371049976663,
+          "max_yaw_rad": 0.9420000000000002,
+          "endpoint_RGB_MAE_255": 59.42510986328125
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.39999999999999997,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 55.73304352936921
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.561198658858875,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 55.60141104239005
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.23591340509814196,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 46.049393265335645
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.054280598958333336,
+      "target_pixels": [
+        5867,
+        0,
+        8004
+      ]
+    },
+    {
+      "case_id": "TV6-AT-09-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2587270513127687,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.42706976996528
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.13,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 46.748862937644674
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.26643654152199
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.3410635528475595,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.509297688802086
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.22661387221659676,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.3993982385706
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 48.875687210648145
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.27999999999999997,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 54.64810745804398
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.561198658858875,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 55.60141104239005
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.39999999999999997,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 55.73304352936921
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.3159774908201533,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 48.19556794343171
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 34.364784523292826
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.23591340509814196,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 46.049393265335645
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.054280598958333336,
+      "target_pixels": [
+        5867,
+        0,
+        8004
+      ]
+    },
+    {
+      "case_id": "TV6-AT-09-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.22661387221659676,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.3993982385706
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.26643654152199
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.16,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 39.28950104890046
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2587270513127687,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.42706976996528
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.2802409090068758,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 40.83969229239005
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.040461,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 35.86451325593171
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.15999999999999998,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 50.582076461226855
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.040461000000000025,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 49.49144377531829
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3478083591649287,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 49.71439163773148
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 34.364784523292826
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.23591340509814196,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 46.049393265335645
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3159774908201533,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 48.19556794343171
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.054280598958333336,
+      "target_pixels": [
+        5867,
+        0,
+        8004
+      ]
+    },
+    {
+      "case_id": "TV6-AT-10-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.2589447213968532,
+          "max_yaw_rad": 0.19850499999999993,
+          "endpoint_RGB_MAE_255": 34.493051034432874
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.0972849907079747,
+          "max_yaw_rad": 0.19850499999999993,
+          "endpoint_RGB_MAE_255": 33.917044180410876
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.7976881944826564,
+          "max_yaw_rad": 0.18478700000000003,
+          "endpoint_RGB_MAE_255": 24.42829951533565
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.1642124273068273,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.42989773220486
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.4966020739822594,
+          "max_yaw_rad": 0.2590650000000001,
+          "endpoint_RGB_MAE_255": 35.58556676793982
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.334203924309174,
+          "max_yaw_rad": 0.2590650000000001,
+          "endpoint_RGB_MAE_255": 34.72943567346643
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.6628124556743031,
+          "max_yaw_rad": 0.06408900000000006,
+          "endpoint_RGB_MAE_255": 14.68586109302662
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.0977252863562905,
+          "max_yaw_rad": 0.09632599999999991,
+          "endpoint_RGB_MAE_255": 37.69509774667245
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.808462205084443,
+          "max_yaw_rad": 0.09632599999999991,
+          "endpoint_RGB_MAE_255": 35.241416648582174
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.2505042883209159,
+          "max_yaw_rad": 0.11520200000000003,
+          "endpoint_RGB_MAE_255": 37.59080674913194
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.9612162664858517,
+          "max_yaw_rad": 0.11520200000000003,
+          "endpoint_RGB_MAE_255": 36.1451099537037
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.289300360269392,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.12335883246528
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.06021457248263889,
+      "target_pixels": [
+        3457,
+        8879,
+        8070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-10-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.0752431682335861,
+          "max_yaw_rad": 0.19850499999999993,
+          "endpoint_RGB_MAE_255": 33.76034658926505
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.2589447213968532,
+          "max_yaw_rad": 0.19850499999999993,
+          "endpoint_RGB_MAE_255": 34.493051034432874
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.0972849907079747,
+          "max_yaw_rad": 0.19850499999999993,
+          "endpoint_RGB_MAE_255": 33.917044180410876
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2081277523109305,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.410502115885418
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.90006058304398
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.1642124273068273,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.42989773220486
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.808462205084443,
+          "max_yaw_rad": 0.09632599999999991,
+          "endpoint_RGB_MAE_255": 35.241416648582174
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.0977252863562905,
+          "max_yaw_rad": 0.09632599999999991,
+          "endpoint_RGB_MAE_255": 37.69509774667245
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.0942499551318245,
+          "max_yaw_rad": 0.09632599999999991,
+          "endpoint_RGB_MAE_255": 37.813108091001155
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.289300360269392,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.12335883246528
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.30536165190147896,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.08028609664352
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.79728642216435
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.06021457248263889,
+      "target_pixels": [
+        3457,
+        8879,
+        8070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-10-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2081277523109305,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.410502115885418
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.1642124273068273,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 29.17855269820602
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.1642124273068273,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.42989773220486
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.73491527416088
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.90006058304398
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 29.71365695529514
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 27.383217140480323
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.79728642216435
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.30536165190147896,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.08028609664352
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 33.26838966652199
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.289300360269392,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.92306631582755
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.289300360269392,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.12335883246528
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.06021457248263889,
+      "target_pixels": [
+        3457,
+        8879,
+        8070
+      ]
+    },
+    {
+      "case_id": "TV6-AT-11-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.3254889088306248,
+          "max_yaw_rad": 0.01485000000000003,
+          "endpoint_RGB_MAE_255": 36.30870903862847
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 36.92515281394676
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.41922336154514
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.3254889088306248,
+          "max_yaw_rad": 0.6351499999999999,
+          "endpoint_RGB_MAE_255": 35.07829002097801
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.0141130023276501,
+          "max_yaw_rad": 0.01485000000000003,
+          "endpoint_RGB_MAE_255": 33.31804289641204
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 34.68034532335069
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 41.609761555989586
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.933462534332257,
+          "max_yaw_rad": 0.0985870000000002,
+          "endpoint_RGB_MAE_255": 35.10651991102431
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 25.54646357783565
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.933462534332257,
+          "max_yaw_rad": 0.5514130000000002,
+          "endpoint_RGB_MAE_255": 43.641488534432874
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 47.51800537109375
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.6259587319919739,
+          "max_yaw_rad": 0.0985870000000002,
+          "endpoint_RGB_MAE_255": 29.29423240379051
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03764512803819445,
+      "target_pixels": [
+        4955,
+        4447,
+        5551
+      ]
+    },
+    {
+      "case_id": "TV6-AT-11-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 34.68034532335069
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.41922336154514
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.33702818069858786,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.207164623119212
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 36.92515281394676
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 35.78644929108796
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.07713939525463
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 25.54646357783565
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.079881456163193
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 41.609761555989586
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.32797103647883313,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.077620894820605
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 47.51800537109375
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 37.560569480613424
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03764512803819445,
+      "target_pixels": [
+        4955,
+        4447,
+        5551
+      ]
+    },
+    {
+      "case_id": "TV6-AT-11-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.07713939525463
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.335410789207177
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.33702818069858786,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.207164623119212
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.64309127242477
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.41922336154514
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.31137603405689396,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.244990596064813
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 25.54646357783565
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.32797103647883313,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.077620894820605
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3077820670035863,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.79382776331018
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.079881456163193
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 29.658537688078702
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.020406087239582
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.03764512803819445,
+      "target_pixels": [
+        4955,
+        4447,
+        5551
+      ]
+    },
+    {
+      "case_id": "TV6-DT-12-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.7037323894661391,
+          "max_yaw_rad": 0.800217,
+          "endpoint_RGB_MAE_255": 53.35538284866898
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.7037323894661391,
+          "max_yaw_rad": 0.00571799999999989,
+          "endpoint_RGB_MAE_255": 61.511067708333336
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.4229635624094525,
+          "max_yaw_rad": 0.00571799999999989,
+          "endpoint_RGB_MAE_255": 60.370449490017364
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 58.280336733217595
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 55.91126618561921
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.13004783347801
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.2675501103643952,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.6166833948206
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.3742299581220082,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 49.652242024739586
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.5198873814621923,
+          "max_yaw_rad": 0.004537000000000013,
+          "endpoint_RGB_MAE_255": 46.42566596137153
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 51.01761429398148
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.7874176689257606,
+          "max_yaw_rad": 0.004537000000000013,
+          "endpoint_RGB_MAE_255": 47.698373300057874
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 1.8130603749428753,
+          "max_yaw_rad": 0.8000449999999999,
+          "endpoint_RGB_MAE_255": 56.839052553530095
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.034783257378472224,
+      "target_pixels": [
+        2811,
+        2890,
+        5129
+      ]
+    },
+    {
+      "case_id": "TV6-DT-12-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 56.23328088831018
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 55.91126618561921
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 58.280336733217595
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.3090545679924503,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.119102195457174
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.35942925347222
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.13004783347801
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.37903058087384
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12999999999999998,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 52.309554488570605
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.29807090021671023,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.69140625
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 51.01761429398148
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.2675501103643952,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.6166833948206
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.3742299581220082,
+          "max_yaw_rad": 0.7999999999999998,
+          "endpoint_RGB_MAE_255": 49.652242024739586
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.034783257378472224,
+      "target_pixels": [
+        2811,
+        2890,
+        5129
+      ]
+    },
+    {
+      "case_id": "TV6-DT-12-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.13004783347801
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.28077479587206555,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.19959174262153
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.3090545679924503,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.119102195457174
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 33.4757984302662
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 26.35942925347222
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.45753761574074
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.91570140697338
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.2675501103643952,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.6166833948206
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.37903058087384
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.2675501103643952,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.220680519386573
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 20.25245949074074
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.29807090021671023,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.69140625
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.034783257378472224,
+      "target_pixels": [
+        2811,
+        2890,
+        5129
+      ]
+    },
+    {
+      "case_id": "TV6-DT-13-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.14843669053842443,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.56185574001736
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.5839397734021892,
+          "max_yaw_rad": 0.05380800000000008,
+          "endpoint_RGB_MAE_255": 50.938435872395836
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.5223593195847088,
+          "max_yaw_rad": 0.04978399999999983,
+          "endpoint_RGB_MAE_255": 45.08466932508681
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.7323738313627816,
+          "max_yaw_rad": 0.05380800000000008,
+          "endpoint_RGB_MAE_255": 55.161903663917826
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.6707849083670562,
+          "max_yaw_rad": 0.04978399999999983,
+          "endpoint_RGB_MAE_255": 48.99818250868056
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3425111735082521,
+          "max_yaw_rad": 0.02662500000000012,
+          "endpoint_RGB_MAE_255": 21.34843162254051
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.44733000069858936,
+          "max_yaw_rad": 0.7658969999999998,
+          "endpoint_RGB_MAE_255": 62.480129665798614
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.595356655091719,
+          "max_yaw_rad": 0.7658969999999998,
+          "endpoint_RGB_MAE_255": 60.67460349754051
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.4101600882411647,
+          "max_yaw_rad": 0.2948970000000002,
+          "endpoint_RGB_MAE_255": 30.57171856915509
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.14974701486507172,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.966993543836807
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.3066255535111188,
+          "max_yaw_rad": 0.7203689999999998,
+          "endpoint_RGB_MAE_255": 62.72408492476852
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.4417081802695078,
+          "max_yaw_rad": 0.7203689999999998,
+          "endpoint_RGB_MAE_255": 61.10664650245949
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.0926174587673611,
+      "target_pixels": [
+        7652,
+        11017,
+        13657
+      ]
+    },
+    {
+      "case_id": "TV6-DT-13-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.195491084346063
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.14843669053842443,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.56185574001736
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.6707849083670562,
+          "max_yaw_rad": 0.04978399999999983,
+          "endpoint_RGB_MAE_255": 48.99818250868056
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.19507478334731013,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.91863787615741
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.688049179414524,
+          "max_yaw_rad": 0.04978399999999983,
+          "endpoint_RGB_MAE_255": 51.34894250940393
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.5223593195847088,
+          "max_yaw_rad": 0.04978399999999983,
+          "endpoint_RGB_MAE_255": 45.08466932508681
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.5367118002401289,
+          "max_yaw_rad": 0.7203689999999998,
+          "endpoint_RGB_MAE_255": 59.500490541811345
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.4417081802695078,
+          "max_yaw_rad": 0.7203689999999998,
+          "endpoint_RGB_MAE_255": 61.10664650245949
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3066255535111188,
+          "max_yaw_rad": 0.7203689999999998,
+          "endpoint_RGB_MAE_255": 62.72408492476852
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.989976671006943
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.23031198071528977,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.742565013744212
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.14974701486507172,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.966993543836807
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.0926174587673611,
+      "target_pixels": [
+        7652,
+        11017,
+        13657
+      ]
+    },
+    {
+      "case_id": "TV6-DT-13-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 33.07320601851852
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.195491084346063
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.14843669053842443,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.56185574001736
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 27.45322220413773
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.14843669053842443,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.46343994140625
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.19507478334731013,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.91863787615741
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.989976671006943
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.14974701486507172,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.966993543836807
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.15999999999999998,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 35.27735731336806
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.23031198071528977,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 23.742565013744212
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.04046099999999997,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 30.46920211226852
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.26391303200296873,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 37.239743833188655
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.0926174587673611,
+      "target_pixels": [
+        7652,
+        11017,
+        13657
+      ]
+    },
+    {
+      "case_id": "TV6-STT-14-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.8503723793874071,
+          "max_yaw_rad": 0.0974339999999998,
+          "endpoint_RGB_MAE_255": 44.22465910734954
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.0088806399371535,
+          "max_yaw_rad": 0.11818000000000017,
+          "endpoint_RGB_MAE_255": 50.207297996238424
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.2372175583825953,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.334712275752313
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.628970706250299,
+          "max_yaw_rad": 0.08211700000000022,
+          "endpoint_RGB_MAE_255": 25.764322916666668
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.6132467883160906,
+          "max_yaw_rad": 0.0974339999999998,
+          "endpoint_RGB_MAE_255": 41.707632559317126
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.7716866336959581,
+          "max_yaw_rad": 0.11818000000000017,
+          "endpoint_RGB_MAE_255": 47.64364058883102
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 1.1155691521662832,
+          "max_yaw_rad": 0.031806,
+          "endpoint_RGB_MAE_255": 48.48696786385995
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.2478352318961129,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.210358796296298
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.9735636817388991,
+          "max_yaw_rad": 0.026189000000000018,
+          "endpoint_RGB_MAE_255": 54.23743127893518
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.8677340135559974,
+          "max_yaw_rad": 0.031806,
+          "endpoint_RGB_MAE_255": 49.70487693504051
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.5786400401847422,
+          "max_yaw_rad": 0.01685099999999995,
+          "endpoint_RGB_MAE_255": 21.87116382740162
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.7257289124693874,
+          "max_yaw_rad": 0.026189000000000018,
+          "endpoint_RGB_MAE_255": 54.0197437427662
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.02960205078125,
+      "target_pixels": [
+        4365,
+        3399,
+        1540
+      ]
+    },
+    {
+      "case_id": "TV6-STT-14-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.28065012026542946,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 37.529525191695605
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12000000000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.30585621021412
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.8782430094370237,
+          "max_yaw_rad": 0.0974339999999998,
+          "endpoint_RGB_MAE_255": 46.92605025679977
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2372175583825953,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.334712275752313
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.6132467883160906,
+          "max_yaw_rad": 0.0974339999999998,
+          "endpoint_RGB_MAE_255": 41.707632559317126
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.8503723793874071,
+          "max_yaw_rad": 0.0974339999999998,
+          "endpoint_RGB_MAE_255": 44.22465910734954
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.282909706742275,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.6902013708044
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.989532739428565,
+          "max_yaw_rad": 0.026189000000000018,
+          "endpoint_RGB_MAE_255": 53.35836905020255
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.15289306640625
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.7257289124693874,
+          "max_yaw_rad": 0.026189000000000018,
+          "endpoint_RGB_MAE_255": 54.0197437427662
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.2478352318961129,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.210358796296298
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.9735636817388991,
+          "max_yaw_rad": 0.026189000000000018,
+          "endpoint_RGB_MAE_255": 54.23743127893518
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.02960205078125,
+      "target_pixels": [
+        4365,
+        3399,
+        1540
+      ]
+    },
+    {
+      "case_id": "TV6-STT-14-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2372175583825953,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 41.72977249710648
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 41.394508644386576
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000002,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.55497459129051
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2372175583825953,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.334712275752313
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.28065012026542946,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 37.529525191695605
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12000000000000002,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 29.30585621021412
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 18.00262451171875
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.282909706742275,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.6902013708044
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.15289306640625
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.2478352318961129,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 25.828540943287038
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.011094835069443
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.2478352318961129,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.210358796296298
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.02960205078125,
+      "target_pixels": [
+        4365,
+        3399,
+        1540
+      ]
+    },
+    {
+      "case_id": "TV6-STT-15-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.3447011904954944,
+          "max_yaw_rad": 0.6226669999999999,
+          "endpoint_RGB_MAE_255": 44.6268310546875
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.033690006067583,
+          "max_yaw_rad": 0.027705999999999786,
+          "endpoint_RGB_MAE_255": 49.09866219979745
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.3213380686712997,
+          "max_yaw_rad": 0.027705999999999786,
+          "endpoint_RGB_MAE_255": 53.85309516059028
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.38089955434471184,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 45.87301748770255
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 47.80524811921296
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.2876481713830284,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.0332189489294
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.8690387034793098,
+          "max_yaw_rad": 0.02300000000000013,
+          "endpoint_RGB_MAE_255": 33.944473831741895
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 42.860087076822914
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.519746003327548
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.1415619070330791,
+          "max_yaw_rad": 0.6269999999999998,
+          "endpoint_RGB_MAE_255": 40.406051070601855
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.1415619070330791,
+          "max_yaw_rad": 0.02300000000000013,
+          "endpoint_RGB_MAE_255": 38.474794741030095
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 44.069399233217595
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.055318196614583336,
+      "target_pixels": [
+        3825,
+        2666,
+        8157
+      ]
+    },
+    {
+      "case_id": "TV6-STT-15-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2876481713830284,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.0332189489294
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.311554345981564,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.59404613353588
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.38089955434471184,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 45.87301748770255
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 13.755836769386574
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.25,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 47.80524811921296
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.13,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 48.77690972222222
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 44.25434705946181
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 44.069399233217595
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 42.860087076822914
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.17407000506366
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.30075772550011093,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.09288646556713
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.519746003327548
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.055318196614583336,
+      "target_pixels": [
+        3825,
+        2666,
+        8157
+      ]
+    },
+    {
+      "case_id": "TV6-STT-15-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.241599754050927
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2876481713830284,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 25.163788972077548
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.01996075665509
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2876481713830284,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.0332189489294
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 13.755836769386574
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.311554345981564,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 22.59404613353588
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.86981879340278
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.30075772550011093,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 21.09288646556713
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.17407000506366
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 26.785725911458332
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 27.419169108072918
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.27252363099004845,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.519746003327548
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.055318196614583336,
+      "target_pixels": [
+        3825,
+        2666,
+        8157
+      ]
+    },
+    {
+      "case_id": "TV6-AT-16-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.8819208664846296,
+          "max_yaw_rad": 0.1323310000000002,
+          "endpoint_RGB_MAE_255": 37.548728660300924
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.6677720386658909,
+          "max_yaw_rad": 0.1323310000000002,
+          "endpoint_RGB_MAE_255": 35.819491916232636
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.8819208664846296,
+          "max_yaw_rad": 0.5176690000000002,
+          "endpoint_RGB_MAE_255": 51.19086823640046
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.040538646556712
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 52.134498878761576
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.047035499855326
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 1.1094910534709148,
+          "max_yaw_rad": 0.14114499999999985,
+          "endpoint_RGB_MAE_255": 54.293081778067126
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 61.06285942925347
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 37.02127640335648
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.1094910534709148,
+          "max_yaw_rad": 0.5088550000000001,
+          "endpoint_RGB_MAE_255": 59.08244041160301
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.8751623009248056,
+          "max_yaw_rad": 0.14114499999999985,
+          "endpoint_RGB_MAE_255": 49.195217556423614
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 65.11117666739004
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09956190321180555,
+      "target_pixels": [
+        14191,
+        14681,
+        14130
+      ]
+    },
+    {
+      "case_id": "TV6-AT-16-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.047035499855326
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 52.134498878761576
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.20258924696181
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.040538646556712
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.23500366487567803,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.30218731915509
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.60153763382523
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 38.346652560763886
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 61.06285942925347
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 37.02127640335648
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 53.46516248914931
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.25311688295331064,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 43.22049515335648
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 65.11117666739004
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09956190321180555,
+      "target_pixels": [
+        14191,
+        14681,
+        14130
+      ]
+    },
+    {
+      "case_id": "TV6-AT-16-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.23500366487567803,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.30218731915509
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 36.88294813368056
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.2141590121965452,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.040538646556712
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 29.62006293402778
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.60153763382523
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 35.92817970558449
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 30.862232349537038
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.25311688295331064,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 43.22049515335648
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 38.346652560763886
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 49.81663682725694
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 44.3863841869213
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.23433035747849648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 37.02127640335648
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.09956190321180555,
+      "target_pixels": [
+        14191,
+        14681,
+        14130
+      ]
+    },
+    {
+      "case_id": "TV6-AT-17R1-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.3638762288349335,
+          "max_yaw_rad": 0.01894399999999985,
+          "endpoint_RGB_MAE_255": 52.14813684534143
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.0563721588251938,
+          "max_yaw_rad": 0.01894399999999985,
+          "endpoint_RGB_MAE_255": 51.41024893301505
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.7528009412859418,
+          "max_yaw_rad": 0.016744000000000092,
+          "endpoint_RGB_MAE_255": 29.30097113715278
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.3075047615891501,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.80398220486111
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.1800332489828411,
+          "max_yaw_rad": 0.005815000000000126,
+          "endpoint_RGB_MAE_255": 50.03750045211227
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.8725311071732629,
+          "max_yaw_rad": 0.005815000000000126,
+          "endpoint_RGB_MAE_255": 44.96086290147569
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3183037189619374,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.67055031105324
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.081412194298733,
+          "max_yaw_rad": 0.015563000000000216,
+          "endpoint_RGB_MAE_255": 55.460361056857636
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.8747992126682557,
+          "max_yaw_rad": 0.00927599999999984,
+          "endpoint_RGB_MAE_255": 53.63856788917824
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.3997150710587496,
+          "max_yaw_rad": 0.015563000000000216,
+          "endpoint_RGB_MAE_255": 61.699234573929395
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.1931010600322172,
+          "max_yaw_rad": 0.00927599999999984,
+          "endpoint_RGB_MAE_255": 60.22601996527778
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.8571477136765868,
+          "max_yaw_rad": 0.013551999999999786,
+          "endpoint_RGB_MAE_255": 24.40678123191551
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.10066053602430555,
+      "target_pixels": [
+        14843,
+        14058,
+        11774
+      ]
+    },
+    {
+      "case_id": "TV6-AT-17R1-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.3075047615891501,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.80398220486111
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.8725311071732629,
+          "max_yaw_rad": 0.005815000000000126,
+          "endpoint_RGB_MAE_255": 44.96086290147569
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.33767318282623515,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 31.25728804976852
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.1800332489828411,
+          "max_yaw_rad": 0.005815000000000126,
+          "endpoint_RGB_MAE_255": 50.03750045211227
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.93817816840278
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.1938627679532519,
+          "max_yaw_rad": 0.005815000000000126,
+          "endpoint_RGB_MAE_255": 48.69499376085069
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3183037189619374,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.67055031105324
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.1931010600322172,
+          "max_yaw_rad": 0.00927599999999984,
+          "endpoint_RGB_MAE_255": 60.22601996527778
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.268593117042823
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.8747992126682557,
+          "max_yaw_rad": 0.00927599999999984,
+          "endpoint_RGB_MAE_255": 53.63856788917824
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.3389202524267324,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 35.879116482204864
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 1.1981417526528322,
+          "max_yaw_rad": 0.00927599999999984,
+          "endpoint_RGB_MAE_255": 58.02358443648727
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.10066053602430555,
+      "target_pixels": [
+        14843,
+        14058,
+        11774
+      ]
+    },
+    {
+      "case_id": "TV6-AT-17R1-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.93817816840278
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.3075047615891501,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.80398220486111
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 38.345791286892364
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.33767318282623515,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 31.25728804976852
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 31.7426599573206
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.3075047615891501,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 38.655501754195605
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.3183037189619374,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 32.67055031105324
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.3183037189619374,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 41.929972330729164
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3389202524267324,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 35.879116482204864
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 39.19906051070602
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 30.268593117042823
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 45.200057418258105
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.10066053602430555,
+      "target_pixels": [
+        14843,
+        14058,
+        11774
+      ]
+    },
+    {
+      "case_id": "TV6-AT-18R1-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 2.0846370602793187,
+          "max_yaw_rad": 0.19252499999999984,
+          "endpoint_RGB_MAE_255": 47.104275173611114
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.21395727903719458,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.412880226417823
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.7954094914141452,
+          "max_yaw_rad": 0.15246499999999985,
+          "endpoint_RGB_MAE_255": 44.244461624710645
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.8707633404974022,
+          "max_yaw_rad": 0.19252499999999984,
+          "endpoint_RGB_MAE_255": 43.520125777633105
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.118799444619097,
+          "max_yaw_rad": 0.13623999999999992,
+          "endpoint_RGB_MAE_255": 18.337890625
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.5816435391089232,
+          "max_yaw_rad": 0.15246499999999985,
+          "endpoint_RGB_MAE_255": 40.604562264901624
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.24061254582835034,
+          "max_yaw_rad": 0.007922999999999902,
+          "endpoint_RGB_MAE_255": 11.96552417896412
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.2275579048879647,
+          "max_yaw_rad": 0.007922999999999902,
+          "endpoint_RGB_MAE_255": 18.276493778935187
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.3198406293765694,
+          "max_yaw_rad": 0.007922999999999902,
+          "endpoint_RGB_MAE_255": 23.14617241753472
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.11237634427227111,
+          "max_yaw_rad": 0.003442000000000167,
+          "endpoint_RGB_MAE_255": 12.27642822265625
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.2046518691461185,
+          "max_yaw_rad": 0.003442000000000167,
+          "endpoint_RGB_MAE_255": 18.187000415943288
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.09228294148432856,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.638251410590279
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07249620225694445,
+      "target_pixels": [
+        4691,
+        5987,
+        10690
+      ]
+    },
+    {
+      "case_id": "TV6-AT-18R1-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.30324978298611
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 1.6113502303363474,
+          "max_yaw_rad": 0.15246499999999985,
+          "endpoint_RGB_MAE_255": 39.67791748046875
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.22708156519849854,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.567552354600693
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 1.5816435391089232,
+          "max_yaw_rad": 0.15246499999999985,
+          "endpoint_RGB_MAE_255": 40.604562264901624
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.21395727903719458,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.412880226417823
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 1.7954094914141452,
+          "max_yaw_rad": 0.15246499999999985,
+          "endpoint_RGB_MAE_255": 44.244461624710645
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.09228294148432856,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.638251410590279
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.2046518691461185,
+          "max_yaw_rad": 0.003442000000000167,
+          "endpoint_RGB_MAE_255": 18.187000415943288
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.656604908130788
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.11237634427227111,
+          "max_yaw_rad": 0.003442000000000167,
+          "endpoint_RGB_MAE_255": 12.27642822265625
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.15435744649675961,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.466930248119212
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.240498456429558,
+          "max_yaw_rad": 0.003442000000000167,
+          "endpoint_RGB_MAE_255": 21.389426902488427
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07249620225694445,
+      "target_pixels": [
+        4691,
+        5987,
+        10690
+      ]
+    },
+    {
+      "case_id": "TV6-AT-18R1-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.21395727903719458,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 27.395189073350693
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 19.44442183883102
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 23.516276041666668
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.22708156519849854,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.567552354600693
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.21395727903719458,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.412880226417823
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.30324978298611
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.09228294148432856,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.475687662760418
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.09228294148432856,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.638251410590279
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.15435744649675961,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 19.466930248119212
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.292102955005788
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.90946903935185
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.656604908130788
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.07249620225694445,
+      "target_pixels": [
+        4691,
+        5987,
+        10690
+      ]
+    },
+    {
+      "case_id": "TV6-DT-19-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.018016165940404,
+          "max_yaw_rad": 0.9794,
+          "endpoint_RGB_MAE_255": 31.33060257523148
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 1.664328,
+          "endpoint_RGB_MAE_255": 39.762485080295136
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 1.664328,
+          "endpoint_RGB_MAE_255": 42.72439462167245
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.7950023627650423,
+          "max_yaw_rad": 0.6849280000000002,
+          "endpoint_RGB_MAE_255": 41.82370560257523
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.018016165940404,
+          "max_yaw_rad": 0.6849280000000002,
+          "endpoint_RGB_MAE_255": 43.972373679832174
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.68773509837963
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.5003479999999998,
+          "endpoint_RGB_MAE_255": 80.55232295283565
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.5003479999999998,
+          "endpoint_RGB_MAE_255": 78.04132984302662
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.799998301988823,
+          "max_yaw_rad": 0.30837400000000015,
+          "endpoint_RGB_MAE_255": 56.776389793113424
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.93217185691551
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.799998301988823,
+          "max_yaw_rad": 0.1919740000000001,
+          "endpoint_RGB_MAE_255": 60.850685402199076
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.6037797779803494,
+          "max_yaw_rad": 0.1919740000000001,
+          "endpoint_RGB_MAE_255": 55.23595061125579
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.1498345269097222,
+      "target_pixels": [
+        15199,
+        11865,
+        22094
+      ]
+    },
+    {
+      "case_id": "TV6-DT-19-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.68773509837963
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.3146356381117689,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.199442545572918
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 1.6643280000000003,
+          "endpoint_RGB_MAE_255": 39.762485080295136
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.17437744140625
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 1.6643280000000003,
+          "endpoint_RGB_MAE_255": 42.72439462167245
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 1.6643280000000003,
+          "endpoint_RGB_MAE_255": 44.17548737702546
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.5003479999999998,
+          "endpoint_RGB_MAE_255": 79.80914758752894
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 44.40447545934607
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.2515089361136101,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 45.54905418113426
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.5003479999999998,
+          "endpoint_RGB_MAE_255": 80.55232295283565
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.5003479999999998,
+          "endpoint_RGB_MAE_255": 78.04132984302662
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.93217185691551
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.1498345269097222,
+      "target_pixels": [
+        15199,
+        11865,
+        22094
+      ]
+    },
+    {
+      "case_id": "TV6-DT-19-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 34.728951913339124
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 37.97997594762732
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.85968469690393
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.3146356381117689,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.199442545572918
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.22315408302336753,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.68773509837963
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 20.17437744140625
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 51.095468026620374
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.19628088278026465,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.93217185691551
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.2515089361136101,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 45.54905418113426
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 51.141549569589124
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 30.78520146122685
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 44.40447545934607
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.1498345269097222,
+      "target_pixels": [
+        15199,
+        11865,
+        22094
+      ]
+    },
+    {
+      "case_id": "TV6-DT-20R1-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 57.88490577980324
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.32684175603799465,
+          "max_yaw_rad": 0.8472049999999998,
+          "endpoint_RGB_MAE_255": 59.67251021773727
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.47807707609954
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2673247153257626,
+          "max_yaw_rad": 0.19720499999999985,
+          "endpoint_RGB_MAE_255": 32.281880696614586
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.75111219618056
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.32684175603799465,
+          "max_yaw_rad": 0.19720499999999985,
+          "endpoint_RGB_MAE_255": 52.66426368995949
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.30198392948135505,
+          "max_yaw_rad": 0.5705400000000003,
+          "endpoint_RGB_MAE_255": 50.71342185691551
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.402070222077548
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 1.159178,
+          "endpoint_RGB_MAE_255": 60.550193504050924
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.2115128806337808,
+          "max_yaw_rad": 0.5705400000000003,
+          "endpoint_RGB_MAE_255": 50.99778917100694
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.30198392948135505,
+          "max_yaw_rad": 0.588638,
+          "endpoint_RGB_MAE_255": 56.190450032552086
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 1.159178,
+          "endpoint_RGB_MAE_255": 57.98925103081597
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.12740071614583334,
+      "target_pixels": [
+        14820,
+        12239,
+        18786
+      ]
+    },
+    {
+      "case_id": "TV6-DT-20R1-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.3116598623660095,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 43.82930953414352
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.135755750868057
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 49.50694444444444
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.75111219618056
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 57.88490577980324
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.6499999999999999,
+          "endpoint_RGB_MAE_255": 51.47807707609954
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 31.20795355902778
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 1.159178,
+          "endpoint_RGB_MAE_255": 60.550193504050924
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.402070222077548
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 1.159178,
+          "endpoint_RGB_MAE_255": 56.929746274594905
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.14419980459418105,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.65875244140625
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 1.1591779999999998,
+          "endpoint_RGB_MAE_255": 57.98925103081597
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.12740071614583334,
+      "target_pixels": [
+        14820,
+        12239,
+        18786
+      ]
+    },
+    {
+      "case_id": "TV6-DT-20R1-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 24.135755750868057
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.12000000000000001,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 32.34369574652778
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.3116598623660095,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 43.82930953414352
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 28.619868525752313
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 36.75111219618056
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.2000002745248116,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 38.314860026041664
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 28.402070222077548
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.14419980459418105,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 27.65875244140625
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0904746574737921,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 39.20340530960648
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 31.20795355902778
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 42.436679416232636
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 37.14589888961227
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.12740071614583334,
+      "target_pixels": [
+        14820,
+        12239,
+        18786
+      ]
+    },
+    {
+      "case_id": "TV6-DT-21D2-EASY",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 1.0278491834826742,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 41.38477692780671
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.7341654402987108,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 42.002730758101855
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.6300002506991564,
+          "max_yaw_rad": 0.007455999999999907,
+          "endpoint_RGB_MAE_255": 24.23540355541088
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2937061048752648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.38403998480903
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 1.209443361902491,
+          "max_yaw_rad": 0.007457000000000047,
+          "endpoint_RGB_MAE_255": 43.770693178530095
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.9157583523184486,
+          "max_yaw_rad": 0.007457000000000047,
+          "endpoint_RGB_MAE_255": 44.41381157769097
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.7867421222668836,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 12.184140805844907
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.9945782105782329,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 22.11160617404514
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 1.3049877846516418,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 25.29608154296875
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.7326805804223283,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 19.700382939091437
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 1.0430873474378837,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 24.33133273654514
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.31044261440884696,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.92251247829861
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04867892795138889,
+      "target_pixels": [
+        7167,
+        7050,
+        7178
+      ]
+    },
+    {
+      "case_id": "TV6-DT-21D2-NORMAL",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.14685354651829158,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.413576479311343
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.2937061048752648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.38403998480903
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 1.0278491834826742,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 41.38477692780671
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.14685255835701327,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 13.408741138599536
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.8810049551398675,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 41.164803964120374
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.7341654402987108,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 42.002730758101855
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.99360035083912
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 1.0395158172846626,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 23.61397750289352
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.324377892034892,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.33389621310764
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 1.0430873474378837,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 24.33133273654514
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.31044261440884696,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.92251247829861
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.7326805804223283,
+          "max_yaw_rad": 2.9999999999752447e-06,
+          "endpoint_RGB_MAE_255": 19.700382939091437
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04867892795138889,
+      "target_pixels": [
+        7167,
+        7050,
+        7178
+      ]
+    },
+    {
+      "case_id": "TV6-DT-21D2-HARD",
+      "candidate_pairs": [
+        {
+          "question": 1,
+          "labels": "AB",
+          "max_position_m": 0.14685354651829158,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 11.413576479311343
+        },
+        {
+          "question": 1,
+          "labels": "AC",
+          "max_position_m": 0.14685255835701327,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 13.408741138599536
+        },
+        {
+          "question": 1,
+          "labels": "AD",
+          "max_position_m": 0.14685354651829158,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.892121491608798
+        },
+        {
+          "question": 1,
+          "labels": "BC",
+          "max_position_m": 0.2937061048752648,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 17.38403998480903
+        },
+        {
+          "question": 1,
+          "labels": "BD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.873469599971063
+        },
+        {
+          "question": 1,
+          "labels": "CD",
+          "max_position_m": 0.2937061048752648,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 22.38207103587963
+        },
+        {
+          "question": 2,
+          "labels": "AB",
+          "max_position_m": 0.31044261440884696,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 16.92251247829861
+        },
+        {
+          "question": 2,
+          "labels": "AC",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 15.99360035083912
+        },
+        {
+          "question": 2,
+          "labels": "AD",
+          "max_position_m": 0.0,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 21.08080150462963
+        },
+        {
+          "question": 2,
+          "labels": "BC",
+          "max_position_m": 0.324377892034892,
+          "max_yaw_rad": 0.0,
+          "endpoint_RGB_MAE_255": 18.33389621310764
+        },
+        {
+          "question": 2,
+          "labels": "BD",
+          "max_position_m": 0.31044261440884696,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 22.83864113136574
+        },
+        {
+          "question": 2,
+          "labels": "CD",
+          "max_position_m": 0.12,
+          "max_yaw_rad": 0.1200000000000001,
+          "endpoint_RGB_MAE_255": 24.065205891927082
+        }
+      ],
+      "all_eight_options_fully_executed": true,
+      "input_person_fraction_max": 0.04867892795138889,
+      "target_pixels": [
+        7167,
+        7050,
+        7178
+      ]
+    }
+  ],
+  "frozen_parent_files_unchanged": 8,
+  "base_events": 21,
+  "existing_rewritten_events": 14,
+  "retired_old_event_replaced": 1,
+  "additional_events_beyond_prior_size": 6,
+  "new_source_events": 7,
+  "variants_per_event": 3,
+  "unique_executed_paths": 252,
+  "unique_executed_waypoints": 2016,
+  "unchanged_parent_event_views": 14,
+  "no_old_answers_inherited": true,
+  "fresh_original_CPM_sources_success_hash_full_decode_rechecked": 12
+}

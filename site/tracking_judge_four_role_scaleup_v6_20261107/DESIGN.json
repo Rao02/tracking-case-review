@@ -1,0 +1,65 @@
+{
+  "base_events": 21,
+  "existing_events_rewritten": 14,
+  "retired_old_event_replacements": 1,
+  "additional_events_beyond_prior_size": 6,
+  "new_AT_events": 4,
+  "new_DT_events": 3,
+  "task_balance": {
+    "AT": 11,
+    "DT": 8,
+    "STT": 2
+  },
+  "source_modes": {
+    "delayed_target_path_kinematic": 9,
+    "recorded_cpm_command_replay": 12
+  },
+  "episode_families": 20,
+  "scenes": 17,
+  "difficulty_levels": {
+    "easy": {
+      "near_confusers": 1,
+      "roles": [
+        "source_reference",
+        "near_speed",
+        "obvious_wrong",
+        "wrong_direction"
+      ]
+    },
+    "normal": {
+      "near_confusers": 2,
+      "roles": [
+        "source_reference",
+        "near_speed",
+        "near_offset",
+        "wrong_direction"
+      ]
+    },
+    "hard": {
+      "near_confusers": 3,
+      "roles": [
+        "source_reference",
+        "near_speed",
+        "near_offset",
+        "near_heading"
+      ]
+    }
+  },
+  "difficulty_order_validated_by_models": false,
+  "cards": 63,
+  "questions": 126,
+  "displayed_option_appearances": 504,
+  "unique_native_paths": 252,
+  "unique_native_waypoints": 2016,
+  "model_calls_this_work": 0,
+  "correctness_scope": "retrospective source-observation correspondence; not optimality or permanent unrecoverable tracking failure",
+  "confuser_count_only_manipulation": true,
+  "narrow_door_fallback": "Second near option can use heading/distance perturbation when lateral perturbation is blocked; actual construction and measurements are explicit",
+  "gold_from": "actual trajectory that generated fixed views, not which trajectory has most target pixels",
+  "independent_human_ambiguity_review_pending": true,
+  "prompt_language": "English only, versioned EN6, validated without submitting requests",
+  "legacy_answers_inherited": 0,
+  "manual_development_thresholds": true,
+  "wm_involved": false,
+  "official_SR_TR_CR_claim": false
+}

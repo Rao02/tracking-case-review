@@ -1,0 +1,13 @@
+{
+  "retired_case": "TV3A-AT-02",
+  "retired_source_event": "MD2S-AT-04",
+  "replacement_case": "TV6-AT-22",
+  "replacement_source_event": "MD2S-AT-05",
+  "reason": "Original white-corridor event could not support three valid close candidates; alternative registered windows had blocked reference or no terminal target. Retire it from this active release and use independently registered successful native delayed capture MD2S-AT-05.",
+  "old_source_is_not_inadmissible": "Source is registered and allowed; selected action-window/option-pool construction failed, not original provenance.",
+  "old_raw_answers_gold_and_release_unchanged": true,
+  "failed_capture_directories_preserved": true,
+  "additional_new_events": 6,
+  "active_total": 21,
+  "native_packaging_rename": "Successful unpublished reserve capture copied under final ID with path metadata updated; identical RGB/control evidence; no model answers inherited."
+}
