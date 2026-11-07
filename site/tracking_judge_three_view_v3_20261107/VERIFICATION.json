@@ -889,5 +889,15 @@
         8004
       ]
     }
-  ]
+  ],
+  "reference_label_counts": {
+    "A": 5,
+    "D": 4,
+    "C": 4,
+    "B": 5
+  },
+  "distinct_numeric_option_paths": 72,
+  "max_input_person_fraction": 0.09617784288194445,
+  "min_terminal_target_pixels": 806,
+  "min_observed_person_base_distance_m": 0.7071438524512859
 }
