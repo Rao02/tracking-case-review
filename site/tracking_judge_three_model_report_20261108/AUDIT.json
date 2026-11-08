@@ -1,0 +1,108 @@
+{
+  "utc": "2026-11-08T09:54:22.763353+00:00",
+  "selected_answers": 27378,
+  "raw_hashes_verified": 27378,
+  "unique_slots": 27378,
+  "unique_nonces": 27378,
+  "native_history_links_verified": true,
+  "three_draw_completeness": true,
+  "provider_ID_reuse_groups": [
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127852",
+      "n": 3,
+      "distinct_raw": 3
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127161",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794126551",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127206",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127272",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127902",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127334",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127548",
+      "n": 3,
+      "distinct_raw": 3
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794128225",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127728",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794126927",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794126833",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794128291",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794127800",
+      "n": 2,
+      "distinct_raw": 2
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "response_id": "chatcmpl-msg_1794126849",
+      "n": 2,
+      "distinct_raw": 2
+    }
+  ],
+  "backend_independence_certified": false,
+  "all_reused_envelopes_distinct": true,
+  "scoring_unchanged": true,
+  "new_model_calls": 0,
+  "questions_gold_changed": false,
+  "confidence_bins_partition_valid_answers": true,
+  "native_visible_assistant_content_sha256_links_verified": 20736
+}
