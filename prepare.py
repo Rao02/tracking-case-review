@@ -33,6 +33,16 @@ def main():
         # The viewer injects image src from JSON at runtime. HTML link parsing
         # alone sees reference preloads, but misses charts and audit endpoints.
         pending.extend(scaleup/'media'/f.name for f in (ROOT/scaleup/'media').glob('*.png'))
+    # Three-model analysis is a separate read-only report, not a quiz release.
+    # Export an explicit public allowlist after numeric and actual-browser checks.
+    report=Path('tracking_judge_three_model_report_20261108')
+    report_gates=[ROOT/report/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
+    if (ROOT/report/'report.html').is_file() and all(f.is_file() and json.loads(f.read_text()).get('passed') for f in report_gates):
+        verification=json.loads(report_gates[0].read_text())
+        browser_verification=json.loads(report_gates[1].read_text())
+        if verification.get('report_sha256')==browser_verification.get('report_sha256')==hashlib.sha256((ROOT/report/'report.html').read_bytes()).hexdigest():
+            pending.extend(report/name for name in ['report.html','SUMMARY.json','AUDIT.json','answers.csv','contrasts.csv','PROTOCOL.md','examples.json','report_data.json'])
+            pending.extend(report/'media'/f.name for f in (ROOT/report/'media').glob('*.png'))
     while pending:
         rel=pending.pop()
         if rel in content: continue
