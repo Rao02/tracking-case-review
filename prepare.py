@@ -46,7 +46,8 @@ def main():
     # Class-specific read-only review pages. Runtime JSON/media are exported
     # only through manifests that match actual-browser verification.
     for release in ['tracking_judge_class1_review_20261109',
-                    'tracking_judge_class2_review_20261109']:
+                    'tracking_judge_class2_review_20261109',
+                    'tracking_judge_class3_review_20261109']:
         review=Path(release)
         gates=[ROOT/review/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
         if not all(p.is_file() and json.loads(p.read_text()).get('passed') for p in gates):
