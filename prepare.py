@@ -43,17 +43,20 @@ def main():
         if verification.get('report_sha256')==browser_verification.get('report_sha256')==hashlib.sha256((ROOT/report/'report.html').read_bytes()).hexdigest():
             pending.extend(report/name for name in ['report.html','SUMMARY.json','AUDIT.json','answers.csv','contrasts.csv','PROTOCOL.md','examples.json','report_data.json'])
             pending.extend(report/'media'/f.name for f in (ROOT/report/'media').glob('*.png'))
-    # First-class-only read-only review. Its data and answers are loaded by JS,
-    # so include their explicit public allowlist after source/browser checks.
-    first=Path('tracking_judge_class1_review_20261109')
-    first_gates=[ROOT/first/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
-    if all(p.is_file() and json.loads(p.read_text()).get('passed') for p in first_gates):
-        manifest=json.loads(first_gates[0].read_text())
-        browser=json.loads(first_gates[1].read_text())
+    # Class-specific read-only review pages. Runtime JSON/media are exported
+    # only through manifests that match actual-browser verification.
+    for release in ['tracking_judge_class1_review_20261109',
+                    'tracking_judge_class2_review_20261109']:
+        review=Path(release)
+        gates=[ROOT/review/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
+        if not all(p.is_file() and json.loads(p.read_text()).get('passed') for p in gates):
+            continue
+        manifest=json.loads(gates[0].read_text())
+        browser=json.loads(gates[1].read_text())
         checks=manifest['files_sha256']
-        if browser.get('html_sha256')==checks.get('review.html') and all(hashlib.sha256((ROOT/first/name).read_bytes()).hexdigest()==digest for name,digest in checks.items()):
-            pending.extend(first/name for name in checks)
-            pending.extend(first/'media'/f.name for f in (ROOT/first/'media').glob('*.png'))
+        if browser.get('html_sha256')==checks.get('review.html') and all(hashlib.sha256((ROOT/review/name).read_bytes()).hexdigest()==digest for name,digest in checks.items()):
+            pending.extend(review/name for name in checks)
+            pending.extend(review/'media'/f.name for f in (ROOT/review/'media').glob('*.png'))
     while pending:
         rel=pending.pop()
         if rel in content: continue
