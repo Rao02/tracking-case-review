@@ -61,3 +61,15 @@ Computed from the same frozen Class-1 scored source: 11 temporal events ×3 effo
 ## Additional annotation/identifiability gap
 
 AB gold and DESIGN metadata explicitly retain independent human ambiguity review pending. A gold denotes the generating reference correspondence, not the uniquely viable or best tracking policy; multiple hidden paths can be consistent with sparse views. Before promoting A to planning evidence, independently inspect an appropriately balanced sample for answer identifiability and acceptability of alternatives. This cannot be solved by a more sophisticated score. Current B covers all24 outcome-label permutations; the former sequential A→1 pattern is not a constant current gold.
+
+## Competing terminal outcome decomposition (existing statistics, task adaptation)
+
+For decision t, define h_F(t)=P(failure at t | active just before t) and h_S(t)=P(success at t | active just before t). S(0)=1, S(t)=S(t−1)[1−h_F(t)−h_S(t)]. Then cumulative final success is sum_t S(t−1)h_S(t). Successful sessions leave the risk set, so multiplying only (1−failure hazard) would be wrong. This is ordinary finite competing-outcome probability bookkeeping, not a new mathematical survival estimator.
+
+Observed failures / active sessions at t1,t2,t3:
+- Sol:51/297,45/246,8/41.
+- Terra:37/297,92/260,13/32 (includes one uninterpretable root choice as failure).
+- Sonnet:23/297,113/274,27/51.
+- DPSK:25/297,95/272,20/42.
+
+This locates process attrition: Sonnet has fewer immediate failures but more later failures in its own state population. The hazard heatmap is descriptive; these 37-family-derived populations must not be interpreted as the same recovery states across models. The formula reconstructs the observed final success exactly and is checked by verify_data.py.
