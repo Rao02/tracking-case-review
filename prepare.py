@@ -46,6 +46,8 @@ def main():
     # Read-only reliability atlas: explicit public manifest, no raw answers,
     # source manifests, local build scripts or provider configuration.
     atlas=Path('tracking_judge_reliability_atlas_20261110')
+    atlas_cache=OUT.parent/'.atlas_last_good.json'
+    atlas_checks=None
     atlas_gates=[ROOT/atlas/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
     if all(p.is_file() and json.loads(p.read_text()).get('passed') for p in atlas_gates):
         manifest=json.loads(atlas_gates[0].read_text())
@@ -53,6 +55,13 @@ def main():
         checks=manifest['files_sha256']
         if browser.get('html_sha256')==checks.get('report.html') and all(hashlib.sha256((ROOT/atlas/name).read_bytes()).hexdigest()==digest for name,digest in checks.items()):
             pending.extend(atlas/name for name in checks)
+            atlas_checks=checks
+    # Source edits invalidate the new-release gates temporarily. Keep the
+    # previously verified public bytes until a complete replacement passes.
+    if atlas_checks is None and atlas_cache.is_file():
+        previous=json.loads(atlas_cache.read_text())
+        if all((OUT/atlas/name).is_file() and hashlib.sha256((OUT/atlas/name).read_bytes()).hexdigest()==digest for name,digest in previous.items()):
+            content.update({atlas/name:(OUT/atlas/name).read_bytes() for name in previous})
     # Class-specific read-only review pages. Runtime JSON/media are exported
     # only through manifests that match actual-browser verification.
     for release in ['tracking_judge_class1_review_20261109',
@@ -102,6 +111,10 @@ def main():
             tmp=dst.with_name(dst.name+'.tmp');tmp.write_bytes(data);tmp.replace(dst)
     (OUT/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>Tracking Case Review</title><script>location.replace("'+ENTRY.as_posix()+'"+location.search+location.hash)</script><a href="'+ENTRY.as_posix()+'">Open case review</a>\n')
     (OUT/'.nojekyll').touch()
+    if atlas_checks is not None:
+        tmp=atlas_cache.with_suffix('.tmp')
+        tmp.write_text(json.dumps(atlas_checks,indent=2)+'\n')
+        tmp.replace(atlas_cache)
     report={'entry':ENTRY.as_posix(),'files':len(content),'bytes':size,'MiB':round(size/1024**2,2),'html_pages':[str(r) for r in sorted(content) if r.suffix=='.html'],'missing':[], 'entry_sha256':hashlib.sha256(content[ENTRY]).hexdigest(),'files_sha256':{str(r):hashlib.sha256(b).hexdigest() for r,b in sorted(content.items())}}
     (OUT.parent/'EXPORT_REPORT.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='files_sha256'},indent=2))

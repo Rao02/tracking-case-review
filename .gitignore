@@ -2,3 +2,4 @@ __pycache__/
 EXPORT_REPORT.json
 *.log
 .sync.lock
+.atlas_last_good.json
