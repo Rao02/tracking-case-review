@@ -43,6 +43,16 @@ def main():
         if verification.get('report_sha256')==browser_verification.get('report_sha256')==hashlib.sha256((ROOT/report/'report.html').read_bytes()).hexdigest():
             pending.extend(report/name for name in ['report.html','SUMMARY.json','AUDIT.json','answers.csv','contrasts.csv','PROTOCOL.md','examples.json','report_data.json'])
             pending.extend(report/'media'/f.name for f in (ROOT/report/'media').glob('*.png'))
+    # Read-only reliability atlas: explicit public manifest, no raw answers,
+    # source manifests, local build scripts or provider configuration.
+    atlas=Path('tracking_judge_reliability_atlas_20261110')
+    atlas_gates=[ROOT/atlas/name for name in ['VERIFICATION.json','BROWSER_VERIFICATION.json']]
+    if all(p.is_file() and json.loads(p.read_text()).get('passed') for p in atlas_gates):
+        manifest=json.loads(atlas_gates[0].read_text())
+        browser=json.loads(atlas_gates[1].read_text())
+        checks=manifest['files_sha256']
+        if browser.get('html_sha256')==checks.get('report.html') and all(hashlib.sha256((ROOT/atlas/name).read_bytes()).hexdigest()==digest for name,digest in checks.items()):
+            pending.extend(atlas/name for name in checks)
     # Class-specific read-only review pages. Runtime JSON/media are exported
     # only through manifests that match actual-browser verification.
     for release in ['tracking_judge_class1_review_20261109',
