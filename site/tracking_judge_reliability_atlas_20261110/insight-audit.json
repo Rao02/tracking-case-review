@@ -214,6 +214,40 @@
         },
         "entry_sessions": 246,
         "failed_after_entry": 53
+      },
+      "sorting_components": {
+        "none": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 95,
+          "partial_order": 4,
+          "complete_reversal": 0,
+          "membership_error": 0
+        },
+        "correct": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 97,
+          "partial_order": 1,
+          "complete_reversal": 0,
+          "membership_error": 1
+        },
+        "false": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 99,
+          "partial_order": 0,
+          "complete_reversal": 0,
+          "membership_error": 0
+        },
+        "mixed": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 99,
+          "partial_order": 0,
+          "complete_reversal": 0,
+          "membership_error": 0
+        }
       }
     },
     "gpt-6.1-terra": {
@@ -429,6 +463,40 @@
         },
         "entry_sessions": 260,
         "failed_after_entry": 105
+      },
+      "sorting_components": {
+        "none": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 96,
+          "partial_order": 1,
+          "complete_reversal": 0,
+          "membership_error": 2
+        },
+        "correct": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 88,
+          "partial_order": 8,
+          "complete_reversal": 0,
+          "membership_error": 3
+        },
+        "false": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 92,
+          "partial_order": 2,
+          "complete_reversal": 0,
+          "membership_error": 5
+        },
+        "mixed": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 97,
+          "partial_order": 0,
+          "complete_reversal": 0,
+          "membership_error": 2
+        }
       }
     },
     "claude-sonnet-5-5": {
@@ -644,6 +712,40 @@
         },
         "entry_sessions": 274,
         "failed_after_entry": 140
+      },
+      "sorting_components": {
+        "none": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 83,
+          "partial_order": 11,
+          "complete_reversal": 0,
+          "membership_error": 5
+        },
+        "correct": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 82,
+          "partial_order": 12,
+          "complete_reversal": 0,
+          "membership_error": 5
+        },
+        "false": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 79,
+          "partial_order": 14,
+          "complete_reversal": 0,
+          "membership_error": 6
+        },
+        "mixed": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 88,
+          "partial_order": 8,
+          "complete_reversal": 0,
+          "membership_error": 3
+        }
       }
     },
     "deepseek-v4.1-flash": {
@@ -859,6 +961,40 @@
         },
         "entry_sessions": 272,
         "failed_after_entry": 115
+      },
+      "sorting_components": {
+        "none": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 45,
+          "partial_order": 20,
+          "complete_reversal": 0,
+          "membership_error": 34
+        },
+        "correct": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 29,
+          "partial_order": 18,
+          "complete_reversal": 0,
+          "membership_error": 52
+        },
+        "false": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 34,
+          "partial_order": 23,
+          "complete_reversal": 0,
+          "membership_error": 42
+        },
+        "mixed": {
+          "n": 99,
+          "events": 11,
+          "fully_correct": 48,
+          "partial_order": 18,
+          "complete_reversal": 0,
+          "membership_error": 33
+        }
       }
     }
   },

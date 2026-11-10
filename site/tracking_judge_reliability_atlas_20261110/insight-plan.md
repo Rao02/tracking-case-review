@@ -31,13 +31,13 @@ Saved C tree uniform-label success is7/27=25.93%. Always choose A/B/C yields20.2
 
 ## Small additional package (proposed, not launched)
 
-Use 24 held-out/source-separated events per relevant protocol, 8 each STT/AT/DT; balance scenes, source mode, turns, occlusion and encounters. AB/C need not silently share event IDs: audit exact state/image/target equivalence before any cross-protocol claim. Old exact matching control slots may be reused; modified requests get new IDs. All proposed counts below are per four models and three complete independent answers, with high effort accepted at the provider. No capped/truncated answers count.
+Use 24 events per relevant protocol, 8 each STT/AT/DT; balance scenes, source mode, turns, occlusion and encounters. Reusing existing analysed cases produces a mechanism-validation set, not independent held-out confirmation. To make confirmatory/generalization claims, freeze separately source-isolated new events; old control answers cannot be inherited by those new events. AB/C need not silently share event IDs: audit exact state/image/target equivalence before any cross-protocol claim. Old exact matching control slots may be reused; modified requests get new IDs. All proposed counts below are per four models and three complete independent answers, with high effort accepted at the provider. No capped/truncated answers count.
 
 - WP dependence:24 AB events ×2 stages ×3 conditions(full, masked action, reassign actions to labels with gold recomputed) ×3 draws ×4 models =1,728 calls. Reuse the 576 original full calls only if the exact contract matches; at least1,152 new calls. This tests dependence and assignment invariance, not just recognizability of image layout.
 - Shared-state recovery:24 C events ×2 saved deviation nodes ×3 draws ×4 models =576 new standalone calls. They measure current-state recovery. Any native-history comparison is a separate protocol, not silently pooled.
 - Stale-information control:24 source-separated events ×4 conditions(none, current, actual0.6s-old, actual1.2s-old evidence) ×3 draws ×4 models =1,152 new calls. The two ages are provisional manually chosen design points; admit only cases with exact source coverage and verified state change. Hold final question/current evidence fixed and length/style-match the three nonempty advice conditions; report the no-advice length difference. Select the age points on calibration scenes before freezing a held-out set. No monotonic stale-information effect is assumed.
 
-Minimum new calls if originals match:2,880 across four models. This is a feasible offline evidence package, not an autonomous controller/harness project. Do not launch automatically from this audit. All need case construction, contract validation and frozen calibration/held-out separation first. If the intended central claim is only descriptive benchmark behavior, narrower claims can be supported without every proposed test; causal action dependence, stale-state anchoring or general recovery capability cannot.
+Minimum new calls if originals match:2,880 across four models; without exact original-control reuse,3,456. The latter is the relevant count for fully new source-held-out cases. This is a feasible offline evidence package, not an autonomous controller/harness project. Do not launch automatically from this audit. All need case construction, contract validation and frozen calibration/held-out separation first. If the intended central claim is only descriptive benchmark behavior, narrower claims can be supported without every proposed test; causal action dependence, stale-state anchoring or general recovery capability cannot.
 
 ## Metric priorities
 
@@ -53,3 +53,11 @@ Let L=P(final failure | root action is C or D). Both root choices have an oracle
 |gpt-6.1-terra|40.38%|105/260|[31.60%, 49.79%]|
 |claude-sonnet-5-5|51.09%|140/274|[42.93%, 60.93%]|
 |deepseek-v4.1-flash|42.28%|115/272|[34.03%, 52.96%]|
+
+## Temporal component audit
+
+Computed from the same frozen Class-1 scored source: 11 temporal events ×3 efforts ×3 draws =99 answers per guidance/model. Four guides give396 answers/model. Outcomes are disjoint: full correctness; correct event membership with partial order error; correct membership with complete reversal (Kendall tau−1); membership error. Across all four models' false-guide cohorts (396 answers), none had correct membership plus complete reversal. That does not establish misleading-advice resistance: membership errors and partial order errors remain, and the false prompt may jointly advise including unrelated images and reversing chronology. Factor-specific advice controls are needed for attribution.
+
+## Additional annotation/identifiability gap
+
+AB gold and DESIGN metadata explicitly retain independent human ambiguity review pending. A gold denotes the generating reference correspondence, not the uniquely viable or best tracking policy; multiple hidden paths can be consistent with sparse views. Before promoting A to planning evidence, independently inspect an appropriately balanced sample for answer identifiability and acceptability of alternatives. This cannot be solved by a more sophisticated score. Current B covers all24 outcome-label permutations; the former sequential A→1 pattern is not a constant current gold.
