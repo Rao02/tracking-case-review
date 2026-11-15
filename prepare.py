@@ -6,7 +6,7 @@ from urllib.parse import urlsplit, unquote
 import hashlib, json, shutil
 ROOT = Path('/home/ytyan/Rao/artifacts')
 OUT = Path(__file__).resolve().parent / 'site'
-ENTRY = Path('tracking_judge_scaleup_20261102/review.html')
+ENTRY = Path('tracking_judge_review_portal_20261116/index.html')
 class Links(HTMLParser):
     def __init__(self):
         super().__init__(); self.refs=[]
@@ -14,7 +14,12 @@ class Links(HTMLParser):
         for k,v in attrs:
             if k in ('src','href') and v: self.refs.append(v)
 def main():
-    pending=[ENTRY]; content={}; missing=[]
+    portal=ROOT/ENTRY.parent
+    portal_verification=json.loads((portal/'VERIFICATION.json').read_text())
+    portal_browser=json.loads((portal/'BROWSER_VERIFICATION.json').read_text())
+    assert portal_verification['passed'] and portal_browser['passed']
+    assert portal_verification['html_sha256']==portal_browser['html_sha256']==hashlib.sha256((ROOT/ENTRY).read_bytes()).hexdigest()
+    pending=[ENTRY,Path('tracking_judge_scaleup_20261102/review.html')]; content={}; missing=[]
     # Isolated preview release; frozen main cohorts remain unchanged.
     preview=Path('tracking_judge_three_state_v1_20261106/review.html')
     if (ROOT/preview).is_file(): pending.append(preview)
@@ -109,7 +114,9 @@ def main():
         dst=OUT/rel; dst.parent.mkdir(parents=True,exist_ok=True)
         if not dst.exists() or dst.read_bytes()!=data:
             tmp=dst.with_name(dst.name+'.tmp');tmp.write_bytes(data);tmp.replace(dst)
-    (OUT/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>Tracking Case Review</title><script>location.replace("'+ENTRY.as_posix()+'"+location.search+location.hash)</script><a href="'+ENTRY.as_posix()+'">Open case review</a>\n')
+    # Root URL is the three-class overview. Keep a named copy so all class
+    # pages can share a stable return link and local preview path.
+    (OUT/'index.html').write_text(content[ENTRY].decode().replace('href="../','href="'))
     (OUT/'.nojekyll').touch()
     if atlas_checks is not None:
         tmp=atlas_cache.with_suffix('.tmp')
