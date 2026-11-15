@@ -31,12 +31,13 @@ function branchTree(item){
  const left=Math.min(...root.bounds.map(b=>b[0])),right=Math.max(...root.bounds.map(b=>b[1]));
  shift(root,18-left);
  const width=right-left+36,height=Math.max(...cards.map(c=>c.depth*level+c.height))+20;
- const svg='<svg width="'+width+'" height="'+height+'" aria-hidden="true">'+edges.map(e=>{
+ const paths=[],labels=[];edges.forEach(e=>{
   const a=e.from,b=e.to,y=a.depth*level+a.height,end=b.depth*level,mid=(y+end)/2;
   const key=e.role==='reference'?'branchCorrect':e.role==='recoverable'?'branchFlawed':'branchWrong';
-  return '<path data-from="'+esc(a.id)+'" data-to="'+esc(b.id||b.terminal)+'" data-choice="'+esc(e.label)+'" data-role="'+esc(e.role)+'" d="M '+a.x+' '+y+' C '+a.x+' '+mid+', '+b.x+' '+mid+', '+b.x+' '+end+'"/>'+
-   '<g transform="translate('+b.x+' '+(end-30)+')"><rect x="-76" y="-12" width="152" height="24" rx="12"/><text text-anchor="middle" dominant-baseline="central">'+esc(e.label+' · '+t(key))+'</text></g>';
- }).join('')+'</svg>';
+  paths.push('<path data-from="'+esc(a.id)+'" data-to="'+esc(b.id||b.terminal)+'" data-choice="'+esc(e.label)+'" data-role="'+esc(e.role)+'" d="M '+a.x+' '+y+' C '+a.x+' '+mid+', '+b.x+' '+mid+', '+b.x+' '+end+'"/>');
+  labels.push('<g transform="translate('+b.x+' '+(end-30)+')"><rect x="-76" y="-12" width="152" height="24" rx="12"/><text text-anchor="middle" dominant-baseline="central">'+esc(e.label+' · '+t(key))+'</text></g>');
+ });
+ const svg='<svg width="'+width+'" height="'+height+'" aria-hidden="true">'+paths.join('')+labels.join('')+'</svg>';
  const boxes=cards.map(c=>{
   const selected=!c.terminal&&c.id===$('node').value,media=c.node?c.node.question.media.find(m=>m.label==='CURRENT'):c.incoming;
   const title=c.terminal?t(c.terminal):t('branchState',{state:'S'+c.depth});
